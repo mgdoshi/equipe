@@ -1,0 +1,534 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <meta name="GENERATOR" content="Mozilla/4.5 [en] (WinNT; I) [Netscape]">
+</head>
+<body background="BACKGR2.gif">
+<form><b>Form :- Item / Q</b>
+<br>&nbsp;
+<table ALIGN=LEFT BORDER=0 COLS=2 WIDTH="100%" 1 >
+<tr>
+<td WIDTH="15%"><img SRC="/ordimg/BP_Button/QRYTAB1.gif" NAME="QRYTAB" ALT="Query Item" BORDER=0 ></td>
+
+<td>On clicking Querry Item , form <a href="#Form :- Item / T">Item / T</a>
+is selected where you can see the details of the querry generated .</td>
+</tr>
+
+<tr>
+<td><img SRC="/ordimg/BP_Button/NEW1.gif" NAME="NEW" ALT="Create New Item" BORDER=0 ></td>
+
+<td>On clicking Create New Item button , form <a href="#Form :- Item / I">Item
+/ I</a> is selected where you can create new Item .</td>
+</tr>
+
+<tr>
+<td><img SRC="/ordimg/BP_Button/FRMHLP1.gif" NAME="FRMHLP" ALT="Item Form Information" BORDER=0 ></td>
+
+<td>You get information about Item form on clicking Item Form Information
+button.</td>
+</tr>
+
+<tr>
+<td><img SRC="/ordimg/BP_Button/HELP1.gif" NAME="HELP" ALT="Item Form Help" BORDER=0 ></td>
+
+<td>You get help about Item form on clicking Item Form Help button.</td>
+</tr>
+</table>
+
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<table ALIGN=LEFT BORDER=0 COLS=2 WIDTH="63%" >
+<tr>
+<td WIDTH="20%"><font face="Arial"><font color="#000000"><font size=-1>Unit
+Type&nbsp;</font></font></font></td>
+
+<td><select NAME="cDM_Unittype"><option VALUE="" ><option VALUE="Z"><font face="Arial"><font color="#000000"><font size=+0>no.s<option VALUE="A">Kgs<option VALUE="B">Gms<option VALUE="C">Tons<option VALUE="D">Quintals<option VALUE="E">Litres<option VALUE="F">MiliLitres<option VALUE="G">KiloLitres<option VALUE="H">Meters<option VALUE="I">cms<option VALUE="J">mms<option VALUE="K">KMs</font></font></font></select></td>
+</tr>
+
+<tr>
+<td><font face="Arial"><font color="#000000"><font size=-1>Item Group&nbsp;</font></font></font></td>
+
+<td><select NAME="nFk_ItemGroup_ID"><option VALUE="" ><option VALUE="1"><font face="Arial"><font color="#000000"><font size=+0>ACCESSORIES<option VALUE="21">DESCORATIVE
+ITEM<option VALUE="11">HGT</font></font></font></select></td>
+</tr>
+
+<tr>
+<td><font face="Arial"><font color="#000000"><font size=-1>Item Class&nbsp;</font></font></font></td>
+
+<td><select NAME="nFk_ItemClass_ID"><option VALUE="" ><option VALUE="1"><font face="Arial"><font color="#000000"><font size=+0>ACCESSORIES<option VALUE="6">FRUITS<option VALUE="11">AUTO<option VALUE="31">ACESSORIES<option VALUE="26">VEGETABLES</font></font></font></select></td>
+</tr>
+
+<tr>
+<td><font face="Arial"><font color="#000000"><font size=-1>Item Name</font></font></font></td>
+
+<td><input TYPE="text" NAME="vItem_Name" SIZE="20" MAXLENGTH="100" VALUE="%" onBlur="this.value=this.value.toUpperCase()"></td>
+</tr>
+
+<tr>
+<td><font face="Arial"><font color="#000000"><font size=-1>Description</font></font></font></td>
+
+<td><input TYPE="text" NAME="vItem_Desc" SIZE="30" MAXLENGTH="100" VALUE="%"></td>
+</tr>
+</table>
+
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<p>
+<hr><a NAME="Form :- Item / T"></a><b>Form :- Item / T</b>
+<br>&nbsp;
+<table ALIGN=LEFT BORDER=0 COLS=2 WIDTH="100%" 1 >
+<tr>
+<td WIDTH="15%"><img SRC="/ordimg/BP_Button/NEW1.gif" NAME="NEW" ALT="Create New Item" BORDER=0 ></td>
+
+<td>On clicking Create New Item button , form <a href="#Form :- Item / I">Item
+/ I</a> is selected where you can create new Item .</td>
+</tr>
+
+<tr>
+<td><img SRC="/ordimg/BP_Button/DELETE1.gif" NAME="DELETE" ALT="Delete Item" BORDER=0 ></td>
+
+<td>Click the check box in the table to delete the items corresponding
+to it.</td>
+</tr>
+
+<tr>
+<td><img SRC="/ordimg/BP_Button/FRMHLP1.gif" NAME="FRMHLP" ALT="Item Form Information" BORDER=0 ></td>
+
+<td>You get information about Item form on clicking Item Form Information
+button.</td>
+</tr>
+
+<tr>
+<td><img SRC="/ordimg/BP_Button/HELP1.gif" NAME="HELP" ALT="Item Form Help" BORDER=0 ></td>
+
+<td>You get help about Item form on clicking Item Form Help button.</td>
+</tr>
+</table>
+
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<table BORDER=0 BGCOLOR="#FFFFCA" >
+<tr>
+<th BGCOLOR="#666666"><font face="Arial"><font color="#FFFFFF"><font size=-1>Item
+ID</font></font></font></th>
+
+<th BGCOLOR="#666666"><font face="Arial"><font color="#FFFFFF"><font size=-1>Name</font></font></font></th>
+
+<th BGCOLOR="#666666"><font face="Arial"><font color="#FFFFFF"><font size=-1>Description</font></font></font></th>
+
+<th BGCOLOR="#666666"><font face="Arial"><font color="#FFFFFF"><font size=-1>Assign
+ItemRates</font></font></font></th>
+
+<th BGCOLOR="#666666"><font face="Arial"><font color="#FFFFFF"><font size=-1>Assign
+Clients</font></font></font></th>
+
+<th BGCOLOR="#666666"><font face="Arial"><font color="#FFFFFF"><font size=-1>Delete</font></font></font></th>
+</tr>
+
+<tr>
+<td ALIGN=LEFT><a href="#Form :- Item / U">Item # 1</a></td>
+
+<td ALIGN=LEFT>CARTON</td>
+
+<td ALIGN=LEFT>Hard Board</td>
+
+<td ALIGN=LEFT><img SRC="/ordimg/BP_Button/NITMRT1.gif" BORDER=0 ></td>
+
+<td ALIGN=LEFT><a href="JavaScript:parent.Assign('Assign3', '56')" NAME="Insert"><img SRC="/ordimg/BP_Button/ASSCLNT1.gif" BORDER=0 ></a></td>
+
+<td ALIGN=LEFT><input TYPE=checkbox NAME=nDelete VALUE=56></td>
+</tr>
+</table>
+
+<p>To update the Item click the Serial No.( Item # 1) corresponding&nbsp;
+to the Description in the row . On clicking Item # 1 , form Item /U is
+selected which displays the updation form.
+<br>
+<hr><a NAME="Form :- Item / I"></a><b>Form :- Item / I</b>
+<br>&nbsp;
+<table ALIGN=LEFT BORDER=0 COLS=2 WIDTH="100%" 1 >
+<tr>
+<td WIDTH="15%"><img SRC="/ordimg/BP_Button/SAVE1.gif" NAME="SAVE" ALT="Save Item" BORDER=0 ></td>
+
+<td>Once new item has been created , on clicking Save Item button , new
+item is saved and form <a href="#Form :- Item / T">Item /T </a>is selected
+, where new item is reflected .</td>
+</tr>
+
+<tr>
+<td><img SRC="/ordimg/BP_Button/NSAVE1.gif" NAME="NSAVE" ALT="Save Item And Create New Item" BORDER=0 ></td>
+
+<td>To save and create new item , click Save Item And Create New Item Button
+.</td>
+</tr>
+
+<tr>
+<td><img SRC="/ordimg/BP_Button/NITMRT1.gif" NAME="NITMRT" ALT="Assign Item Rates" BORDER=0 ></td>
+
+<td>To assign item rates , click Assign Item Rates button .</td>
+</tr>
+
+<tr>
+<td><img SRC="/ordimg/BP_Button/ASSCLNT1.gif" NAME="ASSCLNT" ALT="Assign Clients to Item" BORDER=0 ></td>
+
+<td>To assign clients to Item , click Assign Clients to Item button.&nbsp;</td>
+</tr>
+
+<tr>
+<td><img SRC="/ordimg/BP_Button/ASSUSER1.gif" NAME="ASSUSER" ALT="Assign Users to Item" BORDER=0 ></td>
+
+<td>To assign users to Item , click Assign Users to Item button.&nbsp;</td>
+</tr>
+
+<tr>
+<td><img SRC="/ordimg/BP_Button/FRMHLP1.gif" NAME="FRMHLP" ALT="Item Form Information" BORDER=0 ></td>
+
+<td>You get information about Item form on clicking Item Form Information
+button.</td>
+</tr>
+
+<tr>
+<td><img SRC="/ordimg/BP_Button/HELP1.gif" NAME="HELP" ALT="Item Form Help" BORDER=0 ></td>
+
+<td>You get help about Item form on clicking Item Form Help button.</td>
+</tr>
+</table>
+
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<table ALIGN=LEFT BORDER=0 COLS=4 WIDTH="85%" 1 >
+<tr ALIGN=LEFT>
+<td>Item Name<font face="Arial"><font color="#FF0000"><font size=+1> <b>*</b></font></font></font></td>
+
+<td WIDTH="28%"><input TYPE="text" NAME="vItem_Name" SIZE="10" MAXLENGTH="100" onBlur="this.value=this.value.toUpperCase()"></td>
+
+<td WIDTH="20%">Available<input TYPE="hidden" NAME="nInActive" VALUE=""></td>
+
+<td><input TYPE="checkbox" NAME="nInActive"></td>
+</tr>
+
+<tr ALIGN=LEFT>
+<td>Description</td>
+
+<td COLSPAN="3"><input TYPE="text" NAME="vItem_Desc" SIZE="40" MAXLENGTH="100"></td>
+
+<td></td>
+
+<td></td>
+</tr>
+
+<tr ALIGN=LEFT>
+<td>Remark 1</td>
+
+<td COLSPAN="3"><input TYPE="text" NAME="vItem_Rem1" SIZE="40" MAXLENGTH="100"></td>
+
+<td></td>
+
+<td></td>
+</tr>
+
+<tr ALIGN=LEFT>
+<td>Remark 2</td>
+
+<td COLSPAN="3"><input TYPE="text" NAME="vItem_Rem2" SIZE="40" MAXLENGTH="100"></td>
+
+<td></td>
+
+<td></td>
+</tr>
+
+<tr ALIGN=LEFT>
+<td>Remark 3</td>
+
+<td COLSPAN="3"><input TYPE="text" NAME="vItem_Rem3" SIZE="40" MAXLENGTH="100"></td>
+
+<td></td>
+
+<td></td>
+</tr>
+
+<tr ALIGN=LEFT>
+<td>Remark 4</td>
+
+<td COLSPAN="3"><input TYPE="text" NAME="vItem_Rem4" SIZE="40" MAXLENGTH="100"></td>
+
+<td></td>
+
+<td></td>
+</tr>
+
+<tr ALIGN=LEFT>
+<td>Min Ord Qty</td>
+
+<td><input TYPE="text" NAME="nMinOrdQty" SIZE="10" MAXLENGTH="100" onBlur="top.check_num(this)"></td>
+
+<td>Max Ord Qty</td>
+
+<td><input TYPE="text" NAME="nMaxOrdQty" SIZE="10" MAXLENGTH="100" onBlur="top.check_num(this)"></td>
+</tr>
+
+<tr ALIGN=LEFT>
+<td>Item Class&nbsp;</td>
+
+<td><select NAME="nFk_ItemClass_ID"><option VALUE="" ><option VALUE="6">BULBS</select></td>
+
+<td>Item Group&nbsp;</td>
+
+<td><select NAME="nFk_ItemGroup_ID"><option VALUE="" ><option VALUE="6">BULB</select></td>
+</tr>
+
+<tr ALIGN=LEFT>
+<td>Cost Centre Name</td>
+
+<td><select NAME="nFk_CostCentre_ID"><option VALUE="" ></select></td>
+
+<td>Unit Type&nbsp;</td>
+
+<td><select NAME="cDM_Unittype"><option VALUE="" ><option VALUE="Z">no.s<option VALUE="A">Kgs<option VALUE="B">Gms<option VALUE="C">Tons<option VALUE="D">Quintals<option VALUE="E">Litres<option VALUE="F">MiliLitres<option VALUE="G">KiloLitres<option VALUE="H">Meters<option VALUE="I">cms<option VALUE="J">mms<option VALUE="K">KMs</select></td>
+</tr>
+
+<tr ALIGN=LEFT>
+<td VALIGN=TOP>Spl Instruct&nbsp;</td>
+
+<td COLSPAN="3" ROWSPAN="2"><textarea NAME="vSplInstruct" ROWS=2 COLS=39 WRAP="Virtual"></textarea></td>
+
+<td></td>
+
+<td></td>
+</tr>
+
+<tr>
+<td>&nbsp;</td>
+</tr>
+
+<tr ALIGN=LEFT>
+<td COLSPAN="2">Assign this Item to all Clients&nbsp;<input TYPE="checkbox" NAME="vAssignAll"></td>
+
+<td COLSPAN="2">Assign this Item to all Users&nbsp;<input TYPE="checkbox" NAME="vAssignAllUser"></td>
+</tr>
+</table>
+
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<p>
+<hr>
+<br><a NAME="Form :- Item / U"></a><b>Form :- Item / U</b>
+<br>&nbsp;
+<table ALIGN=LEFT BORDER=0 COLS=2 WIDTH="100%" 1 >
+<tr>
+<td WIDTH="15%"><img SRC="/ordimg/BP_Button/SAVE1.gif" NAME="SAVE" ALT="Update Item" BORDER=0 ></td>
+
+<td>Once the Item has been updated , on clicking Update Item button , form
+<a href="#Form :- Item / T">Item/T</a> is selected where the updation is
+reflected .</td>
+</tr>
+
+<tr>
+<td><img SRC="/ordimg/BP_Button/NITMRT1.gif" NAME="NITMRT" ALT="Assign Item Rates" BORDER=0 ></td>
+
+<td>To assign item rates , click Assign Item Rates button .</td>
+</tr>
+
+<tr>
+<td><img SRC="/ordimg/BP_Button/MITMRT1.gif" NAME="MITMRT" ALT="Update/Delete Item Rates" BORDER=0 ></td>
+
+<td>To update or delete item rates , click Update/Delete Item Rates button
+.</td>
+</tr>
+
+<tr>
+<td><img SRC="/ordimg/BP_Button/ASSCLNT1.gif" NAME="ASSCLNT" ALT="Assign Clients to Items" BORDER=0 ></td>
+
+<td>To assign clients to Item , click Assign Clients to Item button.&nbsp;</td>
+</tr>
+
+<tr>
+<td><img SRC="/ordimg/BP_Button/ASSUSER1.gif" NAME="ASSUSER" ALT="Assign Users to Item" BORDER=0 ></td>
+
+<td>To assign users to Item , click Assign Users to Item button.&nbsp;</td>
+</tr>
+
+<tr>
+<td><img SRC="/ordimg/BP_Button/FRMHLP1.gif" NAME="FRMHLP" ALT="Item Form Information" BORDER=0 ></td>
+
+<td>You get information about Item form on clicking Item Form Information
+button.</td>
+</tr>
+
+<tr>
+<td><img SRC="/ordimg/BP_Button/HELP1.gif" NAME="HELP" ALT="Item Form Help" BORDER=0 ></td>
+
+<td>You get help about Item form on clicking Item Form Help button.</td>
+</tr>
+</table>
+
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<table ALIGN=LEFT BORDER=0 COLS=4 WIDTH="85%" 1 >
+<tr ALIGN=LEFT>
+<td><font face="Arial"><font color="#000000"><font size=-1>Item Name</font></font><b><font color="#FF0000"><font size=+1>*</font></font></b></font></td>
+
+<td WIDTH="28%"><input TYPE="text" NAME="vItem_Name" SIZE="10" MAXLENGTH="100" VALUE="CARTON" onBlur="this.value=this.value.toUpperCase()"></td>
+
+<td WIDTH="20%"><font face="Arial"><font color="#000000"><font size=-1>Available</font></font></font><input TYPE="hidden" NAME="nInActive" VALUE=""></td>
+
+<td><input TYPE="checkbox" NAME="nInActive" CHECKED></td>
+</tr>
+
+<tr ALIGN=LEFT>
+<td><font face="Arial"><font color="#000000"><font size=-1>Description</font></font></font></td>
+
+<td COLSPAN="3"><input TYPE="text" NAME="vItem_Desc" SIZE="40" MAXLENGTH="100" VALUE="Hard Board"></td>
+
+<td></td>
+
+<td></td>
+</tr>
+
+<tr ALIGN=LEFT>
+<td><font face="Arial"><font color="#000000"><font size=-1>Remark 1</font></font></font></td>
+
+<td COLSPAN="3"><input TYPE="text" NAME="vItem_Rem1" SIZE="40" MAXLENGTH="100" VALUE="Remark1"></td>
+
+<td></td>
+
+<td></td>
+</tr>
+
+<tr ALIGN=LEFT>
+<td><font face="Arial"><font color="#000000"><font size=-1>Remark 2</font></font></font></td>
+
+<td COLSPAN="3"><input TYPE="text" NAME="vItem_Rem2" SIZE="40" MAXLENGTH="100" VALUE="Remark2"></td>
+
+<td></td>
+
+<td></td>
+</tr>
+
+<tr ALIGN=LEFT>
+<td><font face="Arial"><font color="#000000"><font size=-1>Remark 3</font></font></font></td>
+
+<td COLSPAN="3"><input TYPE="text" NAME="vItem_Rem3" SIZE="40" MAXLENGTH="100" VALUE="Remark3"></td>
+
+<td></td>
+
+<td></td>
+</tr>
+
+<tr ALIGN=LEFT>
+<td><font face="Arial"><font color="#000000"><font size=-1>Remark 4</font></font></font></td>
+
+<td COLSPAN="3"><input TYPE="text" NAME="vItem_Rem4" SIZE="40" MAXLENGTH="100" VALUE="Remark4"></td>
+
+<td></td>
+
+<td></td>
+</tr>
+
+<tr ALIGN=LEFT>
+<td><font face="Arial"><font color="#000000"><font size=-1>Min Ord Qty</font></font></font></td>
+
+<td><input TYPE="text" NAME="nMinOrdQty" SIZE="10" MAXLENGTH="100" VALUE="30" onBlur="top.check_num(this)"></td>
+
+<td><font face="Arial"><font color="#000000"><font size=-1>Max Ord Qty</font></font></font></td>
+
+<td><input TYPE="text" NAME="nMaxOrdQty" SIZE="10" MAXLENGTH="100" VALUE="50" onBlur="top.check_num(this)"></td>
+</tr>
+
+<tr ALIGN=LEFT>
+<td><font face="Arial"><font color="#000000"><font size=-1>Item Class&nbsp;</font></font></font></td>
+
+<td><select NAME="nFk_ItemClass_ID"><option VALUE="" ><option SELECTED VALUE="1"><font face="Arial"><font color="#000000"><font size=+0>ACCESSORIES<option VALUE="6">FRUITS<option VALUE="11">AUTO<option VALUE="31">ACESSORIES<option VALUE="26">VEGETABLES</font></font></font></select></td>
+
+<td><font face="Arial"><font color="#000000"><font size=-1>Item Group&nbsp;</font></font></font></td>
+
+<td><select NAME="nFk_ItemGroup_ID"><option VALUE="" ><option VALUE="1"><font face="Arial"><font color="#000000"><font size=+0>ACCESSORIES<option VALUE="21">DESCORATIVE
+ITEM<option VALUE="11">HGT</font></font></font></select></td>
+</tr>
+
+<tr ALIGN=LEFT>
+<td><font face="Arial"><font color="#000000"><font size=-1>Cost Centre
+Name</font></font></font></td>
+
+<td><select NAME="nFk_CostCentre_ID"><option VALUE="" ><option VALUE="1"><font face="Arial"><font color="#000000"><font size=+0>MARKETING<option SELECTED VALUE="2">PRODUCTION<option VALUE="16">ACESSORIES<option VALUE="11">DISTRIBUTOR</font></font></font></select></td>
+
+<td><font face="Arial"><font color="#000000"><font size=-1>Unit Type&nbsp;</font></font></font></td>
+
+<td><select NAME="cDM_Unittype"><option VALUE="" ><option SELECTED VALUE="Z"><font face="Arial"><font color="#000000"><font size=+0>no.s<option VALUE="A">Kgs<option VALUE="B">Gms<option VALUE="C">Tons<option VALUE="D">Quintals<option VALUE="E">Litres<option VALUE="F">MiliLitres<option VALUE="G">KiloLitres<option VALUE="H">Meters<option VALUE="I">cms<option VALUE="J">mms<option VALUE="K">KMs</font></font></font></select></td>
+</tr>
+
+<tr ALIGN=LEFT>
+<td VALIGN=TOP><font face="Arial"><font color="#000000"><font size=-1>Spl
+Instruct&nbsp;</font></font></font></td>
+
+<td COLSPAN="3" ROWSPAN="2"><textarea NAME="vSplInstruct" ROWS=2 COLS=39 WRAP="Virtual"></textarea></td>
+
+<td></td>
+
+<td></td>
+</tr>
+</table>
+
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<p>
+<hr></form>
+</body>
+</html>

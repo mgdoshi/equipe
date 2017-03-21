@@ -1,0 +1,15 @@
+<HTML>
+<HEAD>
+  <SCRIPT LANGUAGE="JavaScript">
+    function GetBrowser() {
+      if( navigator.appName == "Netscape")
+         this.location.href = "/JOrder/servlets/ClsTemplChooser?Browser=1"
+      else
+         this.location.href = "/JOrder/servlets/ClsTemplChooser?Browser=0"
+      return
+    }
+  </SCRIPT> 
+</HEAD>
+<BODY BACKGROUND="/ordimg/BACKGR2.GIF" onLoad="GetBrowser()">
+</BODY>
+</HTML>

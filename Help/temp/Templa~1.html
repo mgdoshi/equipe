@@ -1,0 +1,609 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <meta name="GENERATOR" content="Mozilla/4.5 [en] (WinNT; I) [Netscape]">
+</head>
+<body background="BACKGR2.gif">
+<form><b>Form :- OrderEntry /I</b>
+<br>&nbsp;
+<table ALIGN=LEFT BORDER=0 COLS=2 WIDTH="100%" 1 >
+<tr>
+<td WIDTH="15%"><img SRC="TEMPORD1.gif" NAME="TEMPORD" ALT="Show Order Form" BORDER=0 ></td>
+
+<td>You can select Order template , by clicking Order Form Template button
+. On clicking form <a href="#Form :- OrderEntry/I">Order Entry/I</a> is
+selected and the Billing Address and Shipping address is assigned to the
+Order Entry Form .</td>
+</tr>
+
+<tr>
+<td><img SRC="FRMHLP1.gif" NAME="FRMHLP" ALT="Order Form Information" BORDER=0 ></td>
+
+<td>You get information about Order form on clicking Order Form Information
+button.</td>
+</tr>
+
+<tr>
+<td><img SRC="HELP1.gif" ALT="Order Form Help" BORDER=0 height=24 width=22></td>
+
+<td>You get help about Order Form on clicking Order Form Help button .</td>
+</tr>
+</table>
+
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<table ALIGN=LEFT BORDER=0 COLS=2 WIDTH="70%" 1 >
+<tr ALIGN=LEFT>
+<td><font face="Arial"><font color="#000000"><font size=-1>Select Order
+Template</font></font></font></td>
+
+<td><select NAME="nTemplateID"><option VALUE="" ><option VALUE="106"><font face="Arial"><font color="#000000"><font size=+0>TEMPL_FOR_USER_MANOJ</font></font></font></select></td>
+</tr>
+</table>
+
+<br>&nbsp;
+<p>
+<hr><form><a NAME="Form :- OrderEntry/I"></a><b>Form :- OrderEntry /I</b>
+<br>&nbsp;
+<table ALIGN=LEFT BORDER=0 COLS=2 WIDTH="100%" 1 >
+<tr>
+<td WIDTH="15%"><img SRC="SAVE1.gif" NAME="SAVE" ALT="Save Order Entry" BORDER=0 ></td>
+
+<td>After Order Entry is created ,on clicking Save Order Entry button ,
+Order Entry is saved and form <a href="#Form :- Order Details/I">Order
+Details/I </a>is selected where Order Details can be entered .&nbsp;</td>
+</tr>
+
+<tr>
+<td><img SRC="FRMHLP1.gif" NAME="FRMHLP" ALT="Order Form Information" BORDER=0 ></td>
+
+<td>You get information about Order form on clicking Order Form information
+button .</td>
+</tr>
+
+<tr>
+<td><img SRC="HELP1.gif" ALT="Order Form Help" BORDER=0 height=24 width=22></td>
+
+<td>You get help about Order Form on clicking Order Form Help button .</td>
+</tr>
+</table>
+
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<table BORDER=0 COLS=6 WIDTH="90%" 1 >
+<tr>
+<td><font color="#0000FF">Select Client</font></td>
+
+<td><select NAME="nFkClientID"><option VALUE="" ><option VALUE="1">INTERNAL</select></td>
+
+<td><font color="#0000FF">Shopping Cart</font></td>
+
+<td><select NAME="nShpCartID"><option VALUE="" ></select></td>
+
+<td><font color="#0000FF">Order Dtls Count</font></td>
+
+<td><input TYPE="text" NAME="nOrdDtlsCount" SIZE="5" MAXLENGTH="10" VALUE="10"></td>
+</tr>
+</table>
+
+<hr>
+<table BORDER=0 COLS=4 WIDTH="93%" 1 >
+<tr ALIGN=LEFT>
+<td WIDTH="13%">Order Status</td>
+
+<td>Draft<input TYPE="hidden" NAME="cDM_OrdStat" VALUE="A"></td>
+
+<td WIDTH="15%">Order No<b><font face="Arial"><font color="#FF0000"><font size=+1>*</font></font></font></b></td>
+
+<td>ORD/TIN/99/.../ING<input TYPE="hidden" NAME="vOrder_No" VALUE="ORD/TIN/99/.../ING"></td>
+</tr>
+
+<tr ALIGN=LEFT>
+<td>Order Date<font face="Arial"><font color="#FF0000"><font size=+1> <b>*</b></font></font></font></td>
+
+<td><input TYPE="text" NAME="dOrder_Dt" SIZE="12" MAXLENGTH="40" VALUE="21.09.1999" onBlur="top.check_date(this)">&nbsp;
+DD.MM.YYYY</td>
+
+<td>Exp Del Date</td>
+
+<td><input TYPE="text" NAME="dExpDel_Dt" SIZE="12" MAXLENGTH="40" onBlur="top.check_date(this)">&nbsp;
+DD.MM.YYYY</td>
+</tr>
+</table>
+
+<table BORDER=0 COLS=2 WIDTH="93%" 1 >
+<tr ALIGN=LEFT>
+<td WIDTH="9%">Billing Addr</td>
+
+<td><select NAME="nBillAdd_ID"><option VALUE="" ><option VALUE="1">PUNE</select></td>
+</tr>
+
+<tr ALIGN=LEFT>
+<td>Shipping Addr</td>
+
+<td><select NAME="nShipAdd_ID"><option VALUE="" ><option VALUE="1">PUNE</select></td>
+</tr>
+</table>
+
+<table BORDER=0 COLS=6 WIDTH="92%" 1 >
+<tr ALIGN=LEFT>
+<td WIDTH="15%"></td>
+
+<td></td>
+
+<td></td>
+
+<td></td>
+
+<td></td>
+
+<td></td>
+</tr>
+
+<tr ALIGN=LEFT>
+<td>Custom Num1</td>
+
+<td><input TYPE="text" NAME="nNum1" SIZE="12" MAXLENGTH="40" onBlur="top.check_num(this)"></td>
+
+<td>Custom Text1</td>
+
+<td><input TYPE="text" NAME="vText1" SIZE="12" MAXLENGTH="40"></td>
+
+<td>Custom Date1</td>
+
+<td><input TYPE="text" NAME="dDt1" SIZE="12" MAXLENGTH="7" onBlur="top.check_date(this)"></td>
+</tr>
+
+<tr>
+<td>Custom Num2</td>
+
+<td><input TYPE="text" NAME="nNum2" SIZE="12" MAXLENGTH="40" onBlur="top.check_num(this)"></td>
+
+<td>Custom Text2</td>
+
+<td><input TYPE="text" NAME="vText2" SIZE="12" MAXLENGTH="40"></td>
+
+<td>Custom Date2</td>
+
+<td><input TYPE="text" NAME="dDt2" SIZE="12" MAXLENGTH="12" onBlur="top.check_date(this)"></td>
+</tr>
+
+<tr>
+<td>Custom Num3</td>
+
+<td><input TYPE="text" NAME="nNum3" SIZE="12" MAXLENGTH="40" onBlur="top.check_num(this)"></td>
+
+<td>Custom Text3</td>
+
+<td><input TYPE="text" NAME="vText3" SIZE="12" MAXLENGTH="40"></td>
+
+<td>Custom Date3</td>
+
+<td><input TYPE="text" NAME="dDt3" SIZE="12" MAXLENGTH="12" onBlur="top.check_date(this)"></td>
+</tr>
+
+<tr>
+<td>Custom Num4</td>
+
+<td><input TYPE="text" NAME="nNum4" SIZE="12" MAXLENGTH="40" onBlur="top.check_num(this)"></td>
+
+<td>Custom Text4</td>
+
+<td><input TYPE="text" NAME="vText4" SIZE="12" MAXLENGTH="40"></td>
+
+<td>Custom Charge1</td>
+
+<td><input TYPE="text" NAME="nCharge1" SIZE="12" MAXLENGTH="40" onBlur="top.check_num(this)"></td>
+</tr>
+
+<tr>
+<td>Custom Num5</td>
+
+<td><input TYPE="text" NAME="nNum5" SIZE="12" MAXLENGTH="40" onBlur="top.check_num(this)"></td>
+
+<td>Custom Text5</td>
+
+<td><input TYPE="text" NAME="vText5" SIZE="12" MAXLENGTH="40"></td>
+
+<td>Custom Charge2</td>
+
+<td><input TYPE="text" NAME="nCharge2" SIZE="12" MAXLENGTH="12" onBlur="top.check_date(this)"></td>
+</tr>
+
+<tr>
+<td>Custom Charge3</td>
+
+<td><input TYPE="text" NAME="nCharge3" SIZE="12" MAXLENGTH="12" onBlur="top.check_date(this)"></td>
+
+<td>Custom Charge4</td>
+
+<td><input TYPE="text" NAME="nCharge4" SIZE="12" MAXLENGTH="12" onBlur="top.check_date(this)"></td>
+
+<td></td>
+
+<td></td>
+</tr>
+</table>
+
+<table BORDER=0 COLS=2 WIDTH="92%" 1 >
+<tr ALIGN=LEFT>
+<td WIDTH="11%"></td>
+
+<td></td>
+</tr>
+
+<tr ALIGN=LEFT>
+<td>Custom Rem1</td>
+
+<td><input TYPE="text" NAME="vRemarks1" SIZE="50" MAXLENGTH="500"></td>
+</tr>
+
+<tr ALIGN=LEFT>
+<td>Custom Rem2</td>
+
+<td><input TYPE="text" NAME="vRemarks2" SIZE="50" MAXLENGTH="500"></td>
+</tr>
+
+<tr ALIGN=LEFT>
+<td>Custom Rem3</td>
+
+<td><input TYPE="text" NAME="vRemarks3" SIZE="50" MAXLENGTH="500"></td>
+</tr>
+</table>
+
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<p>
+<hr><form><a NAME="Form :- Order Details/I"></a><b>Form :- Order Details
+/I</b>
+<br>&nbsp;
+<table ALIGN=LEFT BORDER=0 COLS=2 WIDTH="100%" 1 >
+<tr>
+<td WIDTH="15%"><img SRC="SAVE1.gif" NAME="SAVE" ALT="Save Order Details" BORDER=0 ></td>
+
+<td>After the Order Details is created , on clicking Save Order Details
+button , form <a href="#Form :- Order Details">Order Details </a>is selected
+where the details of the order is reflected .</td>
+</tr>
+
+<tr>
+<td><img SRC="SELITM1.gif" NAME="SELITM" ALT="Show Item List" BORDER=0 ></td>
+
+<td>On clicking Show Item List , a Item LIst is shown where the Item description
+, Item Class , Item name etc is given .</td>
+</tr>
+
+<tr>
+<td><img SRC="FRMHLP1.gif" NAME="FRMHLP" ALT="Order Form Information" BORDER=0 ></td>
+
+<td>You get information about Order form on clicking Order Form information
+button .</td>
+</tr>
+
+<tr>
+<td><img SRC="HELP1.gif" NAME="HELP" ALT="Order Form Help" BORDER=0 ></td>
+
+<td>You get help about Order Form on clicking Order Form Help button .</td>
+</tr>
+</table>
+
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<table ALIGN=LEFT BORDER=0 COLS=8 WIDTH="100%" 1 >
+<tr ALIGN=CENTER>
+<td><b>Order No</b></td>
+
+<td WIDTH="5%">ORD/TIN/99/12/ING</td>
+
+<td><b>Order Date</b></td>
+
+<td>23.09.1999</td>
+
+<td><b>Order Status</b></td>
+
+<td>Open</td>
+
+<td><b>Exp Del Date</b></td>
+
+<td></td>
+</tr>
+</table>
+
+<br>&nbsp;
+<p>
+<hr>
+<table ALIGN=LEFT BORDER=0 CELLSPACING=0 CELLPADDING=0 COLS=14 WIDTH="1%" 1 >
+<tr ALIGN=LEFT>
+<td>Pos No<font face="Arial"><font color="#FF0000"><font size=+1> <b>*</b></font></font></font></td>
+
+<td>Item<font face="Arial"><font color="#FF0000"><font size=+1> <b>*</b></font></font></font></td>
+
+<td>Item Pack<font face="Arial"><font color="#FF0000"><font size=+1> <b>*</b></font></font></font></td>
+
+<td>Unit Price<font face="Arial"><font color="#FF0000"><font size=+1> <b>*</b></font></font></font></td>
+
+<td></td>
+
+<td></td>
+
+<td></td>
+
+<td></td>
+
+<td></td>
+
+<td></td>
+
+<td></td>
+
+<td></td>
+
+<td></td>
+
+<td></td>
+</tr>
+
+<tr ALIGN=LEFT>
+<td>&nbsp;</td>
+
+<td>Quantity<font face="Arial"><font color="#FF0000"><font size=+1> <b>*</b></font></font></font></td>
+
+<td>Unit Type<font face="Arial"><font color="#FF0000"><font size=+1> <b>*</b></font></font></font></td>
+
+<td></td>
+
+<td></td>
+
+<td></td>
+
+<td></td>
+
+<td></td>
+
+<td></td>
+
+<td></td>
+
+<td></td>
+
+<td></td>
+
+<td></td>
+
+<td></td>
+</tr>
+
+<tr ALIGN=LEFT>
+<td>&nbsp;</td>
+
+<td>Custom Num1</td>
+
+<td>Custom Num2</td>
+
+<td>Custom Num3</td>
+
+<td>Custom Num4</td>
+
+<td>Custom Num5</td>
+
+<td>Custom Text1</td>
+
+<td>Custom Text2</td>
+
+<td>Custom Text3</td>
+
+<td>Custom Text4</td>
+
+<td>Custom Text5</td>
+
+<td>Custom Rem1</td>
+
+<td>Custom Rem2</td>
+
+<td>Custom Rem3</td>
+</tr>
+
+<tr ALIGN=LEFT>
+<td><input TYPE="text" NAME="nPos_No" SIZE="5" MAXLENGTH="20" onBlur="top.check_num(this)"></td>
+
+<td><select NAME="nFk_Item_ID" onChange="parent.show_UnitType( this.options[this.selectedIndex].value, 0 )"><option VALUE="" ><option VALUE="1">TIN-</select></td>
+
+<td><select NAME="nFk_ItemPack_ID"><option VALUE="" ><option VALUE="1">CARD-card
+board pack</select></td>
+
+<td><input TYPE="text" NAME="nUnitPrice" SIZE="10" MAXLENGTH="40" onBlur="top.check_num(this)"></td>
+
+<td></td>
+
+<td></td>
+
+<td></td>
+
+<td></td>
+
+<td></td>
+
+<td></td>
+
+<td></td>
+
+<td></td>
+
+<td></td>
+
+<td></td>
+</tr>
+
+<tr ALIGN=LEFT>
+<td ALIGN=CENTER><input TYPE="BUTTON" NAME="" VALUE="Clear"onClick="parent.clear_record(0)"</FONT></td>
+
+<td><input TYPE="text" NAME="nQuantity" SIZE="10" MAXLENGTH="40" onBlur="top.check_num(this)"></td>
+
+<td><input TYPE="text" NAME="vUnitType" SIZE="10" MAXLENGTH="40" onFocus="document.forms[0].nNum1[0].focus()"><input TYPE="hidden" NAME="cDM_UnitType" VALUE=""></td>
+
+<td></td>
+
+<td></td>
+
+<td></td>
+
+<td></td>
+
+<td></td>
+
+<td></td>
+
+<td></td>
+
+<td></td>
+
+<td></td>
+
+<td></td>
+
+<td></td>
+</tr>
+
+<tr ALIGN=LEFT>
+<td>&nbsp;</td>
+
+<td><input TYPE="text" NAME="nNum1" SIZE="10" MAXLENGTH="40" onBlur="top.check_num(this)"></td>
+
+<td><input TYPE="text" NAME="nNum2" SIZE="10" MAXLENGTH="40" onBlur="top.check_num(this)"></td>
+
+<td><input TYPE="text" NAME="nNum3" SIZE="10" MAXLENGTH="40" onBlur="top.check_num(this)"></td>
+
+<td><input TYPE="text" NAME="nNum4" SIZE="10" MAXLENGTH="40" onBlur="top.check_num(this)"></td>
+
+<td><input TYPE="text" NAME="nNum5" SIZE="10" MAXLENGTH="40" onBlur="top.check_num(this)"></td>
+
+<td><input TYPE="text" NAME="vText1" SIZE="20" MAXLENGTH="40"></td>
+
+<td><input TYPE="text" NAME="vText2" SIZE="20" MAXLENGTH="40"></td>
+
+<td><input TYPE="text" NAME="vText3" SIZE="20" MAXLENGTH="40"></td>
+
+<td><input TYPE="text" NAME="vText4" SIZE="20" MAXLENGTH="40"></td>
+
+<td><input TYPE="text" NAME="vText5" SIZE="20" MAXLENGTH="40"></td>
+
+<td><input TYPE="text" NAME="vRemarks1" SIZE="30" MAXLENGTH="500"></td>
+
+<td><input TYPE="text" NAME="vRemarks2" SIZE="30" MAXLENGTH="500"></td>
+
+<td><input TYPE="text" NAME="vRemarks3" SIZE="30" MAXLENGTH="500"></td>
+</tr>
+
+<tr ALIGN=LEFT>
+<td>&nbsp;</td>
+</tr>
+</table>
+
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<p>
+<hr>
+<p><a NAME="Form :- Order Details"></a><b>Form :- Order Details</b>
+<p><b><font color="#008000"><font size=+1>Order Details</font></font></b>
+<br><input TYPE="hidden" NAME="pnOrderID" VALUE="371">
+<br><b><font face="Arial"><font color="#0000FF"><font size=+0>Order ID&nbsp;&nbsp;
+371</font></font></font></b>
+<br>
+<hr>
+<table BORDER=0 CELLSPACING=3 CELLPADDING=3 COLS=3 WIDTH="100%" 1 valign="Left" >
+<tr>
+<td ALIGN=LEFT>&nbsp;&nbsp; <b><font face="Arial"><font color="#000000"><font size=-1>Order
+No</font></font></font></b>&nbsp;&nbsp; ORD/TIN/99/12/ING</td>
+
+<td ALIGN=LEFT><b><font face="Arial"><font color="#000000"><font size=-1>Order
+Status</font></font></font></b>&nbsp;&nbsp; Draft</td>
+
+<td ALIGN=LEFT><b><font face="Arial"><font color="#000000"><font size=-1>Order
+Date</font></font></font></b>&nbsp;&nbsp; 23.09.1999</td>
+</tr>
+
+<tr>
+<td ALIGN=LEFT>&nbsp;&nbsp; <b><font face="Arial"><font color="#000000"><font size=-1>Exp
+Del Date</font></font></font></b></td>
+
+<td ALIGN=LEFT><b><font face="Arial"><font color="#000000"><font size=-1>Order
+Amount:&nbsp;</font></font></font></b></td>
+
+<td></td>
+</tr>
+</table>
+
+<table BORDER=0 CELLSPACING=3 CELLPADDING=3 COLS=2 WIDTH="100%" 1 valign="Left" >
+<tr>
+<td ALIGN=LEFT WIDTH="15%">&nbsp;&nbsp; <b><font face="Arial"><font color="#000000"><font size=-1>Billing
+Addr</font></font></font></b></td>
+
+<td ALIGN=LEFT></td>
+</tr>
+
+<tr>
+<td ALIGN=LEFT>&nbsp;&nbsp; <b><font face="Arial"><font color="#000000"><font size=-1>Shipping
+Addr</font></font></font></b></td>
+
+<td ALIGN=LEFT></td>
+</tr>
+</table>
+
+<table BORDER=0 CELLSPACING=3 CELLPADDING=3 COLS=1 WIDTH="100%" 1 valign="Left" >
+<tr ALIGN=LEFT VALIGN=TOP>
+<td ALIGN=LEFT>&nbsp;&nbsp; <b><font face="Arial"><font color="#000000"><font size=-1>Custom
+Remarks</font></font></font></b>
+<br>&nbsp;
+<p>&nbsp;</td>
+</tr>
+</table>
+
+<table BORDER=0 CELLSPACING=3 CELLPADDING=3 COLS=6 WIDTH="100%" 1 valign="Left" >
+<tr>
+<td ALIGN=LEFT WIDTH="10%"><b><font face="Arial"><font color="#000000"><font size=-1>Pos
+No</font></font></font></b></td>
+
+<td ALIGN=LEFT WIDTH="15%"><b><font face="Arial"><font color="#000000"><font size=-1>Item
+Name</font></font></font></b></td>
+
+<td ALIGN=LEFT WIDTH="15%"><b><font face="Arial"><font color="#000000"><font size=-1>Item
+Pack Name</font></font></font></b></td>
+
+<td ALIGN=LEFT WIDTH="15%">&nbsp;&nbsp; <b><font face="Arial"><font color="#000000"><font size=-1>Quantity</font></font></font></b></td>
+
+<td ALIGN=LEFT WIDTH="15%"><b><font face="Arial"><font color="#000000"><font size=-1>Unit
+Type</font></font></font></b></td>
+
+<td ALIGN=LEFT><b><font face="Arial"><font color="#000000"><font size=-1>Unit
+Price</font></font></font></b></td>
+</tr>
+</table>
+
+<p>
+<hr></form>
+</body>
+</html>

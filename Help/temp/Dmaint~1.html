@@ -1,0 +1,851 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <meta name="GENERATOR" content="Mozilla/4.5 [en] (WinNT; I) [Netscape]">
+</head>
+<body background="BACKGR2.gif">
+<form><b>Form :- Delivery /D</b>
+<br>&nbsp;
+<table ALIGN=LEFT BORDER=0 COLS=2 WIDTH="100%" 1 >
+<tr>
+<td WIDTH="15%"><img SRC="QRYTAB1.gif" NAME="QRYTAB" ALT="Delivery Query Details" BORDER=0 ></td>
+
+<td>On clicking Delivery Querry Details , form <a href="#Form :- Delivery /T">Delivery
+/T</a> is selected which shows the details of the querry generated .</td>
+</tr>
+
+<tr>
+<td><img SRC="FRMHLP1.gif" NAME="FRMHLP" ALT="Delivery Maintenance Form Information" BORDER=0 ></td>
+
+<td>You get information about Delivery maintainence form on clicking Delivery
+Maintainence Form&nbsp; Information button .</td>
+</tr>
+
+<tr>
+<td><img SRC="HELP1.gif" ALT="Deliver Maintainence Form Help" BORDER=0 height=24 width=22></td>
+
+<td>You get help about Delivery Maintainence Form on clicking Delivery
+Maintainence Form Help button .</td>
+</tr>
+</table>
+
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<table ALIGN=LEFT BORDER=0 COLS=2 WIDTH="60%" 1 >
+<tr ALIGN=LEFT>
+<td WIDTH="20%"><font face="Arial"><font color="#000000"><font size=-1>Delivery
+No From</font></font></font></td>
+
+<td><input TYPE="text" NAME="vDelivery_Nr_From" SIZE="10" MAXLENGTH="30"></td>
+</tr>
+
+<tr ALIGN=LEFT>
+<td><font face="Arial"><font color="#000000"><font size=-1>Delivery No
+To</font></font></font></td>
+
+<td><input TYPE="text" NAME="vDelivery_Nr_To" SIZE="10" MAXLENGTH="30"></td>
+</tr>
+
+<tr ALIGN=LEFT>
+<td><font face="Arial"><font color="#000000"><font size=-1>Delivery Date
+From</font></font></font></td>
+
+<td><input TYPE="text" NAME="dDelivery_Dt_From" SIZE="10" MAXLENGTH="10" onBlur="top.check_date(this)"><font face="Arial"><font color="#000000"><font size=-1>DD.MM.YYYY</font></font></font></td>
+</tr>
+
+<tr ALIGN=LEFT>
+<td><font face="Arial"><font color="#000000"><font size=-1>Delivery Date
+To</font></font></font></td>
+
+<td><input TYPE="text" NAME="dDelivery_Dt_To" SIZE="10" MAXLENGTH="10" onBlur="top.check_date(this)"><font face="Arial"><font color="#000000"><font size=-1>DD.MM.YYYY</font></font></font></td>
+</tr>
+
+<tr ALIGN=LEFT>
+<td><font face="Arial"><font color="#000000"><font size=-1>Delivery Status</font></font></font></td>
+
+<td><select NAME="cDM_DelStat"><option VALUE="" ><option VALUE="A"><font face="Arial"><font color="#000000"><font size=+0>InProcess<option VALUE="D">Shipped<option VALUE="G">Received<option VALUE="Z">Closed</font></font></font></select></td>
+</tr>
+
+<tr ALIGN=LEFT>
+<td><font face="Arial"><font color="#000000"><font size=-1>Shipping Mode</font></font></font></td>
+
+<td><select NAME="cDM_ShipMode"><option VALUE="" ><option VALUE="R"><font face="Arial"><font color="#000000"><font size=+0>Road
+Transport<option VALUE="A">Air Transport<option VALUE="C">Courier<option VALUE="W">Ocean
+Liner</font></font></font></select></td>
+</tr>
+</table>
+
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<p>
+<hr><a NAME="Form :- Delivery /T"></a><b>Form :- Delivery /T</b>
+<br>&nbsp;
+<table ALIGN=LEFT BORDER=0 COLS=2 WIDTH="100%" 1 >
+<tr>
+<td WIDTH="15%"><img SRC="DELETE1.gif" NAME="DELETE" ALT="Delete Delivery" BORDER=0 ></td>
+
+<td>Click the check box in the table to delete the items corresponding
+to it.</td>
+</tr>
+
+<tr>
+<td><img SRC="FRMHLP1.gif" NAME="FRMHLP" ALT="Delivery Maintenance Form Information" BORDER=0 ></td>
+
+<td>You get information about Delivery maintainence form on clicking Delivery
+Maintainence Form&nbsp; Information button .</td>
+</tr>
+
+<tr>
+<td><img SRC="HELP1.gif" ALT="Deliver Maintainence Form Help" BORDER=0 height=24 width=22></td>
+
+<td>You get help about Delivery Maintainence Form on clicking Delivery
+Maintainence Form Help button .</td>
+</tr>
+</table>
+
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<table BORDER=0 BGCOLOR="#FFFFCA" >
+<tr>
+<th BGCOLOR="#666666"><font face="Arial"><font color="#FFFFFF"><font size=-1>Delivery
+ID</font></font></font></th>
+
+<th BGCOLOR="#666666"><font face="Arial"><font color="#FFFFFF"><font size=-1>Delivery
+Dtls</font></font></font></th>
+
+<th BGCOLOR="#666666"><font face="Arial"><font color="#FFFFFF"><font size=-1>Delivery
+No</font></font></font></th>
+
+<th BGCOLOR="#666666"><font face="Arial"><font color="#FFFFFF"><font size=-1>Delivery
+Date</font></font></font></th>
+
+<th BGCOLOR="#666666"><font face="Arial"><font color="#FFFFFF"><font size=-1>Delivery
+Status</font></font></font></th>
+
+<th BGCOLOR="#666666"><font face="Arial"><font color="#FFFFFF"><font size=-1>Shipping
+Mode</font></font></font></th>
+
+<th BGCOLOR="#666666"><font face="Arial"><font color="#FFFFFF"><font size=-1>Delete</font></font></font></th>
+</tr>
+
+<tr>
+<td ALIGN=LEFT><a href="#Form :- Delivery /U">Delivery # 1</a></td>
+
+<td ALIGN=LEFT><a href="#Form :- Delivery Details /T" onMouseOver="return top.show_help( 'Delivery Dtls For Delivery Number : 24TIN99')" onMouseOut="return top.show_help()" TARGET="_parent">Delivery
+Dtls For # 1</a></td>
+
+<td ALIGN=LEFT>24TIN99</td>
+
+<td ALIGN=LEFT>12.10.1999</td>
+
+<td ALIGN=LEFT>InProcess</td>
+
+<td ALIGN=LEFT>Air Transport</td>
+
+<td ALIGN=LEFT><input TYPE=checkbox NAME=nDelete VALUE=146></td>
+</tr>
+</table>
+
+<p>To update the Delivery Header click the Serial No.( Delivery&nbsp; #
+1) corresponding&nbsp; to the Description in the row . On clicking Delivery&nbsp;
+# 1 , form Delivery&nbsp; /T is selected ..
+<p>To update the Delivery Dtls click the Serial No.( Delivery Dtls # 1)
+corresponding&nbsp; to the Description in the row . On clicking Delivery
+Dtls # 1 , form Delivery Details /T is selected ..
+<p>
+<hr><a NAME="Form :- Delivery /U"></a><b>Form :- Delivery /U</b>
+<br>&nbsp;
+<table ALIGN=LEFT BORDER=0 COLS=2 WIDTH="100%" 1 >
+<tr>
+<td WIDTH="15%"><img SRC="SAVE1.gif" NAME="SAVE" ALT="Save Delivery Header" BORDER=0 ></td>
+
+<td>Once Delivery header is updated , on clicking Save Delivery Header
+button , form <a href="#Form :- Delivery /T">Delivery /T</a> is selected
+which reflects the updation .</td>
+</tr>
+
+<tr>
+<td><img SRC="FRMHLP1.gif" NAME="FRMHLP" ALT="Delivery Entry Form Information" BORDER=0 ></td>
+
+<td>You get information about Delivery maintainence form on clicking Delivery
+Maintainence Form&nbsp; Information button .</td>
+</tr>
+
+<tr>
+<td><img SRC="HELP1.gif" ALT="Deliver Maintainence Form Help" BORDER=0 height=24 width=22></td>
+
+<td>You get help about Delivery Maintainence Form on clicking Delivery
+Maintainence Form Help button .</td>
+</tr>
+</table>
+
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<table ALIGN=LEFT BORDER=0 COLS=6 WIDTH="95%" 1 >
+<tr ALIGN=LEFT>
+<td><font color="#FF0000"><font face="Tahoma"><font size=-1>Delivery No</font></font><b><font face="Arial"><font size=+1>*</font></font></b></font></td>
+
+<td WIDTH="20%"><font face="Tahoma"><font color="#FF0000"><font size=-1>DEL/TIN/99/11/ING</font></font></font><input TYPE="hidden" NAME="vDeliveryNo" VALUE="DEL/TIN/99/11/ING"></td>
+
+<td><font face="Tahoma"><font color="#FF0000"><font size=-1>Delivery Status</font></font></font></td>
+
+<td><select NAME="cDMDelStat"><option VALUE="" ><option VALUE="A"><font face="Arial"><font color="#000000"><font size=+0>InProcess<option VALUE="D">Shipped<option VALUE="G">Received<option VALUE="Z">Closed</font></font></font></select></td>
+
+<td WIDTH="10%"><font face="Tahoma"><font color="#FF0000"><font size=-1>Ref
+No</font></font></font></td>
+
+<td><input TYPE="text" NAME="vRefNo" SIZE="8" MAXLENGTH="40"></td>
+</tr>
+</table>
+
+<table BORDER=0 COLS=6 WIDTH="95%" 1 >
+<tr ALIGN=LEFT>
+<td WIDTH="17%"><font face="Tahoma"><font color="#FF0000"><font size=-1>Shipping
+Mode</font></font></font></td>
+
+<td WIDTH="21%"><select NAME="cDMShipMode"><option VALUE="" ><option VALUE="R"><font face="Arial"><font color="#000000"><font size=+0>Road
+Transport<option VALUE="A">Air Transport<option VALUE="C">Courier<option VALUE="W">Ocean
+Liner</font></font></font></select></td>
+
+<td><font color="#FF0000"><font face="Tahoma"><font size=-1>Delivery Date</font></font><b><font face="Arial"><font size=+1>*</font></font></b></font></td>
+
+<td><input TYPE="text" NAME="dDeliveryDt" SIZE="10" MAXLENGTH="40" VALUE="27.09.1999" onBlur="top.check_date(this)"></td>
+
+<td><font face="Tahoma"><font color="#FF0000"><font size=-1>DD.MM.YYYY</font></font></font></td>
+
+<td></td>
+</tr>
+</table>
+
+<table BORDER=0 COLS=2 WIDTH="95%" 1 >
+<tr ALIGN=LEFT>
+<td WIDTH="10%"><font face="Tahoma"><font color="#FF0000"><font size=-1>Shipp
+From Addr</font></font></font></td>
+
+<td COLSPAN="3"><select NAME="nShipFrmAddID"><option VALUE="" ><option SELECTED VALUE="1"><font face="Arial"><font color="#000000"><font size=+0>PUNE</font></font></font></select></td>
+</tr>
+
+<tr ALIGN=LEFT>
+<td><font face="Tahoma"><font color="#FF0000"><font size=-1>Shipp To Addr</font></font></font></td>
+
+<td COLSPAN="3"><select NAME="nShipToAddID"><option VALUE="" ><option SELECTED VALUE="1"><font face="Arial"><font color="#000000"><font size=+0>PUNE</font></font></font></select></td>
+</tr>
+
+<tr ALIGN=LEFT>
+<td><font face="Tahoma"><font color="#FF0000"><font size=-1>Transport Addr</font></font></font></td>
+
+<td COLSPAN="3"><select NAME="nTransAddID"><option VALUE="" ><option SELECTED VALUE="1"><font face="Arial"><font color="#000000"><font size=+0>PUNE</font></font></font></select></td>
+</tr>
+</table>
+
+<table BORDER=0 COLS=6 WIDTH="95%" 1 >
+<tr ALIGN=LEFT>
+<td WIDTH="15%"></td>
+
+<td></td>
+
+<td></td>
+
+<td></td>
+
+<td></td>
+
+<td></td>
+</tr>
+
+<tr ALIGN=LEFT>
+<td><font face="Tahoma"><font color="#FF0000"><font size=-1>Custom Num1</font></font></font></td>
+
+<td><input TYPE="text" NAME="nNum1" SIZE="12" MAXLENGTH="40" onBlur="top.check_num(this)"></td>
+
+<td><font face="Tahoma"><font color="#FF0000"><font size=-1>Custom Text1</font></font></font></td>
+
+<td><input TYPE="text" NAME="vText1" SIZE="12" MAXLENGTH="50"></td>
+
+<td><font face="Tahoma"><font color="#FF0000"><font size=-1>Custom Date1</font></font></font></td>
+
+<td><input TYPE="text" NAME="dDt1" SIZE="12" MAXLENGTH="10" onBlur="top.check_date(this)"></td>
+</tr>
+
+<tr>
+<td><font face="Tahoma"><font color="#FF0000"><font size=-1>Custom Num2</font></font></font></td>
+
+<td><input TYPE="text" NAME="nNum2" SIZE="12" MAXLENGTH="40" onBlur="top.check_num(this)"></td>
+
+<td><font face="Tahoma"><font color="#FF0000"><font size=-1>Custom Text2</font></font></font></td>
+
+<td><input TYPE="text" NAME="vText2" SIZE="12" MAXLENGTH="50"></td>
+
+<td><font face="Tahoma"><font color="#FF0000"><font size=-1>Custom Date2</font></font></font></td>
+
+<td><input TYPE="text" NAME="dDt2" SIZE="12" MAXLENGTH="10" onBlur="top.check_date(this)"></td>
+</tr>
+
+<tr>
+<td><font face="Tahoma"><font color="#FF0000"><font size=-1>Custom Num3</font></font></font></td>
+
+<td><input TYPE="text" NAME="nNum3" SIZE="12" MAXLENGTH="40" onBlur="top.check_num(this)"></td>
+
+<td><font face="Tahoma"><font color="#FF0000"><font size=-1>Custom Text3</font></font></font></td>
+
+<td><input TYPE="text" NAME="vText3" SIZE="12" MAXLENGTH="50"></td>
+
+<td><font face="Tahoma"><font color="#FF0000"><font size=-1>Custom Date3</font></font></font></td>
+
+<td><input TYPE="text" NAME="dDt3" SIZE="12" MAXLENGTH="10" onBlur="top.check_date(this)"></td>
+</tr>
+
+<tr>
+<td><font face="Tahoma"><font color="#FF0000"><font size=-1>Custom Num4</font></font></font></td>
+
+<td><input TYPE="text" NAME="nNum4" SIZE="12" MAXLENGTH="40" onBlur="top.check_num(this)"></td>
+
+<td><font face="Tahoma"><font color="#FF0000"><font size=-1>Custom Text4</font></font></font></td>
+
+<td><input TYPE="text" NAME="vText4" SIZE="12" MAXLENGTH="50"></td>
+
+<td><font face="Tahoma"><font color="#FF0000"><font size=-1>Custom Num5</font></font></font></td>
+
+<td><input TYPE="text" NAME="nNum5" SIZE="12" MAXLENGTH="40" onBlur="top.check_num(this)"></td>
+</tr>
+
+<tr>
+<td><font face="Tahoma"><font color="#FF0000"><font size=-1>Custom Text5</font></font></font></td>
+
+<td><input TYPE="text" NAME="vText5" SIZE="12" MAXLENGTH="50"></td>
+
+<td></td>
+
+<td></td>
+
+<td></td>
+
+<td></td>
+</tr>
+</table>
+
+<table BORDER=0 COLS=2 WIDTH="95%" 1 >
+<tr ALIGN=LEFT>
+<td WIDTH="11%"></td>
+
+<td></td>
+</tr>
+
+<tr ALIGN=LEFT>
+<td><font face="Tahoma"><font color="#FF0000"><font size=-1>Custom Rem1</font></font></font></td>
+
+<td><input TYPE="text" NAME="vRemark1" SIZE="50" MAXLENGTH="500"></td>
+</tr>
+
+<tr ALIGN=LEFT>
+<td><font face="Tahoma"><font color="#FF0000"><font size=-1>Custom Rem2</font></font></font></td>
+
+<td><input TYPE="text" NAME="vRemark2" SIZE="50" MAXLENGTH="500"></td>
+</tr>
+
+<tr ALIGN=LEFT>
+<td><font face="Tahoma"><font color="#FF0000"><font size=-1>Custom Rem3</font></font></font></td>
+
+<td><input TYPE="text" NAME="vRemark3" SIZE="50" MAXLENGTH="500"></td>
+</tr>
+</table>
+
+<p>
+<hr><a NAME="Form :- Delivery Details /T"></a><b>Form :- Delivery Details
+/T</b>
+<br>&nbsp;
+<table ALIGN=LEFT BORDER=0 COLS=2 WIDTH="100%" 1 >
+<tr>
+<td WIDTH="15%"><img SRC="NEW1.gif" NAME="NEW" ALT="Create New Delivery Details" BORDER=0 ></td>
+
+<td>To create new delivery details , click Create New Delivery Details
+button . On clicking form <a href="#Form :- Delivery Details /I">Delivery
+Details /I</a> is selected where you can create new details .</td>
+</tr>
+
+<tr>
+<td><img SRC="DELETE1.gif" NAME="DELETE" ALT="Delete Delivery Details" BORDER=0 ></td>
+
+<td>Click the check box in the table to delete the items corresponding
+to it.</td>
+</tr>
+
+<tr>
+<td><img SRC="FRMHLP1.gif" NAME="FRMHLP" ALT="Delivery Maintenance Form Information" BORDER=0 ></td>
+
+<td>You get information about Delivery maintainence form on clicking Delivery
+Maintainence Form&nbsp; Information button .</td>
+</tr>
+
+<tr>
+<td><img SRC="HELP1.gif" NAME="HELP" ALT="Delivery Maintenance Form Help" BORDER=0 ></td>
+
+<td>You get help about Delivery Maintainence Form on clicking Delivery
+Maintainence Form Help button&nbsp;</td>
+</tr>
+</table>
+
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<table BORDER=0 BGCOLOR="#FFFFCA" >
+<tr>
+<th BGCOLOR="#666666"><font face="arial"><font color="#FFFFFF"><font size=+0>DeliveryDtls
+ID</font></font></font></th>
+
+<th BGCOLOR="#666666"><font face="arial"><font color="#FFFFFF"><font size=+0>Position
+No</font></font></font></th>
+
+<th BGCOLOR="#666666"><font face="arial"><font color="#FFFFFF"><font size=+0>Item
+Name</font></font></font></th>
+
+<th BGCOLOR="#666666"><font face="arial"><font color="#FFFFFF"><font size=+0>Item
+Pack Name</font></font></font></th>
+
+<th BGCOLOR="#666666"><font face="arial"><font color="#FFFFFF"><font size=+0>Delete</font></font></font></th>
+</tr>
+
+<tr>
+<td ALIGN=LEFT><a href="#Form :- Delivery Details /U" onMouseOver="return top.show_help( 'Delivery Details ID : 2 and Pos Nr : 1')" onMouseOut="return top.show_help()" TARGET="_parent">DeliveryDtls
+# 1</a></td>
+
+<td ALIGN=LEFT>1</td>
+
+<td ALIGN=LEFT>TIN</td>
+
+<td ALIGN=LEFT>CARD</td>
+
+<td ALIGN=LEFT><input TYPE=checkbox NAME=nDelete VALUE=2></td>
+</tr>
+</table>
+
+<p>To update the Delivery Details click the Serial No.( Delivery Dtls #
+1) corresponding&nbsp; to the Description in the row . On clicking Delivery&nbsp;
+# 1 , form Delivery Details /U is selected ..
+<p>
+<hr><a NAME="Form :- Delivery Details /I"></a><b>Form :- Delivery Details
+/I</b>
+<br>&nbsp;
+<table BORDER=0 COLS=2 WIDTH="100%" 1 >
+<tr>
+<td WIDTH="15%"><img SRC="SAVE1.gif" NAME="SAVE" ALT="Save Delivery Details" BORDER=0 ></td>
+
+<td>Once Delivery Details has been created , you can save it by clicking
+Save Delivery Details buton. On clicking form <a href="#Form :- Delivery Details /T">Delivery
+Details /T</a> is selected where the newly created one is shown .&nbsp;</td>
+</tr>
+
+<tr>
+<td><img SRC="FRMHLP1.gif" NAME="FRMHLP" ALT="Delivery Maintenance Form Information" BORDER=0 ></td>
+
+<td>You get information about Delivery maintainence form on clicking Delivery
+Maintainence Form&nbsp; Information button .</td>
+</tr>
+
+<tr>
+<td><img SRC="HELP1.gif" NAME="HELP" ALT="Delivery Maintenance Form Help" BORDER=0 ></td>
+
+<td>You get help about Delivery Maintainence Form on clicking Delivery
+Maintainence Form Help button</td>
+</tr>
+</table>
+
+<br>&nbsp;
+<br>&nbsp;
+<table ALIGN=LEFT BORDER=0 COLS=4 WIDTH="80%" 1 >
+<tr ALIGN=LEFT>
+<td WIDTH="25%"><font color="#FF0000"><font face="Tahoma"><font size=-1>Ord/Del
+Pos No</font></font><font face="Arial"><font size=+1> <b>*</b></font></font></font></td>
+
+<td WIDTH="30%"><input TYPE="text" NAME="nPos_No" SIZE="5" MAXLENGTH="20" onBlur="top.check_num(this)"></td>
+
+<td></td>
+
+<td></td>
+</tr>
+
+<tr ALIGN=LEFT>
+<td><font face="Tahoma"><font color="#FF0000"><font size=-1>Item Pack</font></font></font></td>
+
+<td COLSPAN="3"><select NAME="nFk_ItemPack_ID"><option VALUE="" ><option VALUE="1"><font face="Arial"><font color="#000000"><font size=+0>CARD-card
+board pack<option VALUE="6">CARTON-card</font></font></font></select></td>
+
+<td></td>
+
+<td></td>
+</tr>
+
+<tr ALIGN=LEFT>
+<td><font color="#FF0000"><font face="Tahoma"><font size=-1>Item Name</font></font><b><font face="Arial"><font size=+1>*</font></font></b></font></td>
+
+<td COLSPAN="3"><select NAME="nFk_Item_ID"><option VALUE="" ><option VALUE="1"><font face="Arial"><font color="#000000"><font size=+0>TIN-</font></font></font></select></td>
+
+<td></td>
+
+<td></td>
+</tr>
+
+<tr ALIGN=LEFT>
+<td WIDTH="10%"><font color="#FF0000"><font face="Tahoma"><font size=-1>Ord/Del
+Quantity</font></font><font face="Arial"><font size=+1> <b>*</b></font></font></font></td>
+
+<td><input TYPE="text" NAME="nQuantity" SIZE="10" MAXLENGTH="40" onBlur="top.check_num(this)"></td>
+
+<td><font color="#FF0000"><font face="Tahoma"><font size=-1>Unit Type</font></font><b><font face="Arial"><font size=+1>*</font></font></b></font></td>
+
+<td><select NAME="cDM_UnitType"><option VALUE="" ><option VALUE="Z"><font face="Arial"><font color="#000000"><font size=+0>no.s<option VALUE="A">Kgs<option VALUE="B">Gms<option VALUE="C">Tons<option VALUE="D">Quintals<option VALUE="E">Litres<option VALUE="F">MiliLitres<option VALUE="G">KiloLitres<option VALUE="H">Meters<option VALUE="I">cms<option VALUE="J">mms<option VALUE="K">KMs</font></font></font></select></td>
+</tr>
+
+<tr ALIGN=LEFT>
+<td><font face="Tahoma"><font color="#FF0000"><font size=-1>Batch No</font></font></font></td>
+
+<td><input TYPE="text" NAME="vBatchNo" SIZE="10" MAXLENGTH="30"></td>
+
+<td></td>
+
+<td></td>
+</tr>
+
+<tr ALIGN=LEFT>
+<td><font face="Tahoma"><font color="#FF0000"><font size=-1>Cust Num1</font></font></font></td>
+
+<td><input TYPE="text" NAME="nNum1" SIZE="15" MAXLENGTH="40" onBlur="top.check_num(this)"></td>
+
+<td><font face="Tahoma"><font color="#FF0000"><font size=-1>Cust Num2</font></font></font></td>
+
+<td><input TYPE="text" NAME="nNum2" SIZE="15" MAXLENGTH="40" onBlur="top.check_num(this)"></td>
+</tr>
+
+<tr ALIGN=LEFT>
+<td><font face="Tahoma"><font color="#FF0000"><font size=-1>Cust Num3</font></font></font></td>
+
+<td><input TYPE="text" NAME="nNum3" SIZE="15" MAXLENGTH="40" onBlur="top.check_num(this)"></td>
+
+<td><font face="Tahoma"><font color="#FF0000"><font size=-1>Cust Num4</font></font></font></td>
+
+<td><input TYPE="text" NAME="nNum4" SIZE="15" MAXLENGTH="40" onBlur="top.check_num(this)"></td>
+</tr>
+
+<tr ALIGN=LEFT>
+<td><font face="Tahoma"><font color="#FF0000"><font size=-1>Cust Num5</font></font></font></td>
+
+<td><input TYPE="text" NAME="nNum5" SIZE="15" MAXLENGTH="40" onBlur="top.check_num(this)"></td>
+
+<td><font face="Tahoma"><font color="#FF0000"><font size=-1>Cust Text1</font></font></font></td>
+
+<td><input TYPE="text" NAME="vText1" SIZE="20" MAXLENGTH="40"></td>
+</tr>
+
+<tr ALIGN=LEFT>
+<td><font face="Tahoma"><font color="#FF0000"><font size=-1>Cust Text2</font></font></font></td>
+
+<td><input TYPE="text" NAME="vText2" SIZE="20" MAXLENGTH="40"></td>
+
+<td><font face="Tahoma"><font color="#FF0000"><font size=-1>Cust Text3</font></font></font></td>
+
+<td><input TYPE="text" NAME="vText3" SIZE="20" MAXLENGTH="40"></td>
+</tr>
+
+<tr ALIGN=LEFT>
+<td><font face="Tahoma"><font color="#FF0000"><font size=-1>Cust Text4</font></font></font></td>
+
+<td><input TYPE="text" NAME="vText4" SIZE="20" MAXLENGTH="40"></td>
+
+<td><font face="Tahoma"><font color="#FF0000"><font size=-1>Cust Text5</font></font></font></td>
+
+<td><input TYPE="text" NAME="vText5" SIZE="20" MAXLENGTH="40"></td>
+</tr>
+
+<tr ALIGN=LEFT>
+<td><font face="Tahoma"><font color="#FF0000"><font size=-1>Cust Date1</font></font></font></td>
+
+<td><input TYPE="text" NAME="dDt1" SIZE="12" MAXLENGTH="40" onBlur="top.check_date(this)"></td>
+
+<td><font face="Tahoma"><font color="#FF0000"><font size=-1>Cust Date2</font></font></font></td>
+
+<td><input TYPE="text" NAME="dDt2" SIZE="12" MAXLENGTH="40" onBlur="top.check_date(this)"></td>
+</tr>
+
+<tr ALIGN=LEFT>
+<td><font face="Tahoma"><font color="#FF0000"><font size=-1>Cust Date3</font></font></font></td>
+
+<td><input TYPE="text" NAME="dDt3" SIZE="12" MAXLENGTH="40" onBlur="top.check_date(this)"></td>
+
+<td></td>
+
+<td></td>
+</tr>
+</table>
+
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<table BORDER=0 COLS=2 WIDTH="80%" 1 >
+<tr>
+<td WIDTH="20%"><font face="Tahoma"><font color="#FF0000"><font size=-1>Cust
+Remark1</font></font></font></td>
+
+<td><input TYPE="text" NAME="vRemarks1" SIZE="57" MAXLENGTH="500"></td>
+</tr>
+
+<tr>
+<td WIDTH="20%"><font face="Tahoma"><font color="#FF0000"><font size=-1>Cust
+Remark2</font></font></font></td>
+
+<td><input TYPE="text" NAME="vRemarks2" SIZE="57" MAXLENGTH="500"></td>
+</tr>
+
+<tr>
+<td WIDTH="20%"><font face="Tahoma"><font color="#FF0000"><font size=-1>Cust
+Remark3</font></font></font></td>
+
+<td><input TYPE="text" NAME="vRemarks3" SIZE="57" MAXLENGTH="500"></td>
+</tr>
+</table>
+
+<p>
+<hr>
+<p><a NAME="Form :- Delivery Details /U"></a><b>Form :- Delivery Details
+/U</b>
+<br>&nbsp;
+<table ALIGN=LEFT BORDER=0 COLS=2 WIDTH="100%" 1 >
+<tr>
+<td WIDTH="15%"><img SRC="SAVE1.gif" NAME="SAVE" ALT="Update Delivery Details" BORDER=0 ></td>
+
+<td>Once Details are updated , they are reflected in form <a href="#Form :- Delivery Details /T">Delivery
+Details/T</a> , on clicking Update Delivery Details buton .</td>
+</tr>
+
+<tr>
+<td><img SRC="FRMHLP1.gif" NAME="FRMHLP" ALT="Delivery Maintenance Form Information" BORDER=0 ></td>
+
+<td>You get information about Delivery maintainence form on clicking Delivery
+Maintainence Form&nbsp; Information button .</td>
+</tr>
+
+<tr>
+<td><img SRC="HELP1.gif" NAME="HELP" ALT="Delivery Maintenance Form Help" BORDER=0 ></td>
+
+<td>You get help about Delivery Maintainence Form on clicking Delivery
+Maintainence Form Help button&nbsp;</td>
+</tr>
+</table>
+
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<table ALIGN=LEFT BORDER=0 COLS=4 WIDTH="80%" 1 >
+<tr ALIGN=LEFT>
+<td WIDTH="25%"><font color="#FF0000"><font face="Tahoma"><font size=-1>Ord/Del
+Pos No</font></font><font face="Arial"><font size=+1> <b>*</b></font></font></font></td>
+
+<td WIDTH="30%"><input TYPE="text" NAME="nPos_No" SIZE="5" MAXLENGTH="20" VALUE="1" onBlur="top.check_num(this)"></td>
+
+<td></td>
+
+<td></td>
+</tr>
+
+<tr ALIGN=LEFT>
+<td><font face="Tahoma"><font color="#FF0000"><font size=-1>Item Pack</font></font></font></td>
+
+<td COLSPAN="3"><select NAME="nFk_ItemPack_ID"><option VALUE="" ><option SELECTED VALUE="1"><font face="Arial"><font color="#000000"><font size=+0>CARD-card
+board pack<option VALUE="6">CARTON-card</font></font></font></select></td>
+
+<td></td>
+
+<td></td>
+</tr>
+
+<tr ALIGN=LEFT>
+<td><font color="#FF0000"><font face="Tahoma"><font size=-1>Item Name</font></font><b><font face="Arial"><font size=+1>*</font></font></b></font></td>
+
+<td COLSPAN="3"><select NAME="nFk_Item_ID"><option VALUE="" ><option SELECTED VALUE="1"><font face="Arial"><font color="#000000"><font size=+0>TIN-</font></font></font></select></td>
+
+<td></td>
+
+<td></td>
+</tr>
+
+<tr ALIGN=LEFT>
+<td WIDTH="10%"><font color="#FF0000"><font face="Tahoma"><font size=-1>Ord/Del
+Quantity</font></font><font face="Arial"><font size=+1> <b>*</b></font></font></font></td>
+
+<td><input TYPE="text" NAME="nQuantity" SIZE="10" MAXLENGTH="40" VALUE="12" onBlur="top.check_num(this)"></td>
+
+<td><font color="#FF0000"><font face="Tahoma"><font size=-1>Unit Type</font></font><b><font face="Arial"><font size=+1>*</font></font></b></font></td>
+
+<td><select NAME="cDM_UnitType"><option VALUE="" ><option SELECTED VALUE="Z"><font face="Arial"><font color="#000000"><font size=+0>no.s<option VALUE="A">Kgs<option VALUE="B">Gms<option VALUE="C">Tons<option VALUE="D">Quintals<option VALUE="E">Litres<option VALUE="F">MiliLitres<option VALUE="G">KiloLitres<option VALUE="H">Meters<option VALUE="I">cms<option VALUE="J">mms<option VALUE="K">KMs</font></font></font></select></td>
+</tr>
+
+<tr ALIGN=LEFT>
+<td><font face="Tahoma"><font color="#FF0000"><font size=-1>Batch No</font></font></font></td>
+
+<td><input TYPE="text" NAME="vBatchNo" SIZE="10" MAXLENGTH="30"></td>
+
+<td></td>
+
+<td></td>
+</tr>
+
+<tr ALIGN=LEFT>
+<td><font face="Tahoma"><font color="#FF0000"><font size=-1>Cust Num1</font></font></font></td>
+
+<td><input TYPE="text" NAME="nNum1" SIZE="15" MAXLENGTH="40" onBlur="top.check_num(this)"></td>
+
+<td><font face="Tahoma"><font color="#FF0000"><font size=-1>Cust Num2</font></font></font></td>
+
+<td><input TYPE="text" NAME="nNum2" SIZE="15" MAXLENGTH="40" onBlur="top.check_num(this)"></td>
+</tr>
+
+<tr ALIGN=LEFT>
+<td><font face="Tahoma"><font color="#FF0000"><font size=-1>Cust Num3</font></font></font></td>
+
+<td><input TYPE="text" NAME="nNum3" SIZE="15" MAXLENGTH="40" onBlur="top.check_num(this)"></td>
+
+<td><font face="Tahoma"><font color="#FF0000"><font size=-1>Cust Num4</font></font></font></td>
+
+<td><input TYPE="text" NAME="nNum4" SIZE="15" MAXLENGTH="40" onBlur="top.check_num(this)"></td>
+</tr>
+
+<tr ALIGN=LEFT>
+<td><font face="Tahoma"><font color="#FF0000"><font size=-1>Cust Num5</font></font></font></td>
+
+<td><input TYPE="text" NAME="nNum5" SIZE="15" MAXLENGTH="40" onBlur="top.check_num(this)"></td>
+
+<td><font face="Tahoma"><font color="#FF0000"><font size=-1>Cust Text1</font></font></font></td>
+
+<td><input TYPE="text" NAME="vText1" SIZE="20" MAXLENGTH="40"></td>
+</tr>
+
+<tr ALIGN=LEFT>
+<td><font face="Tahoma"><font color="#FF0000"><font size=-1>Cust Text2</font></font></font></td>
+
+<td><input TYPE="text" NAME="vText2" SIZE="20" MAXLENGTH="40"></td>
+
+<td><font face="Tahoma"><font color="#FF0000"><font size=-1>Cust Text3</font></font></font></td>
+
+<td><input TYPE="text" NAME="vText3" SIZE="20" MAXLENGTH="40"></td>
+</tr>
+
+<tr ALIGN=LEFT>
+<td><font face="Tahoma"><font color="#FF0000"><font size=-1>Cust Text4</font></font></font></td>
+
+<td><input TYPE="text" NAME="vText4" SIZE="20" MAXLENGTH="40"></td>
+
+<td><font face="Tahoma"><font color="#FF0000"><font size=-1>Cust Text5</font></font></font></td>
+
+<td><input TYPE="text" NAME="vText5" SIZE="20" MAXLENGTH="40"></td>
+</tr>
+
+<tr ALIGN=LEFT>
+<td><font face="Tahoma"><font color="#FF0000"><font size=-1>Cust Date1</font></font></font></td>
+
+<td><input TYPE="text" NAME="dDt1" SIZE="12" MAXLENGTH="40" onBlur="top.check_date(this)"></td>
+
+<td><font face="Tahoma"><font color="#FF0000"><font size=-1>Cust Date2</font></font></font></td>
+
+<td><input TYPE="text" NAME="dDt2" SIZE="12" MAXLENGTH="40" onBlur="top.check_date(this)"></td>
+</tr>
+
+<tr ALIGN=LEFT>
+<td><font face="Tahoma"><font color="#FF0000"><font size=-1>Cust Date3</font></font></font></td>
+
+<td><input TYPE="text" NAME="dDt3" SIZE="12" MAXLENGTH="40" onBlur="top.check_date(this)"></td>
+
+<td></td>
+
+<td></td>
+</tr>
+</table>
+
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<table BORDER=0 COLS=2 WIDTH="80%" 1 >
+<tr>
+<td WIDTH="20%"><font face="Tahoma"><font color="#FF0000"><font size=-1>Cust
+Remark1</font></font></font></td>
+
+<td><input TYPE="text" NAME="vRemarks1" SIZE="57" MAXLENGTH="500"></td>
+</tr>
+
+<tr>
+<td WIDTH="20%"><font face="Tahoma"><font color="#FF0000"><font size=-1>Cust
+Remark2</font></font></font></td>
+
+<td><input TYPE="text" NAME="vRemarks2" SIZE="57" MAXLENGTH="500"></td>
+</tr>
+
+<tr>
+<td WIDTH="20%"><font face="Tahoma"><font color="#FF0000"><font size=-1>Cust
+Remark3</font></font></font></td>
+
+<td><input TYPE="text" NAME="vRemarks3" SIZE="57" MAXLENGTH="500"></td>
+</tr>
+</table>
+
+<p>
+<hr></form>
+</body>
+</html>

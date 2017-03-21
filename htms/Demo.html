@@ -1,0 +1,136 @@
+<HTML>
+<HEAD>
+<TITLE>The Order Entry & Tracking System</TITLE>
+<SCRIPT LANGUAGE="JavaScript1.3">
+
+  var vImgRef = '/ordimg/BP_Button/'
+
+//  Standard Form Buttons 
+  QRYTAB = new Array( new Image(), new Image() )
+  QRYTAB[0].src = vImgRef+"QRYTAB1.gif"
+  QRYTAB[1].src = vImgRef+"QRYTAB2.gif"
+
+  QRYLST = new Array( new Image(), new Image() )
+  QRYLST[0].src = vImgRef+"QRYLST1.gif"
+  QRYLST[1].src = vImgRef+"QRYLST2.gif"
+
+  NEW = new Array( new Image(), new Image() )
+  NEW[0].src = vImgRef+"NEW1.gif"
+  NEW[1].src = vImgRef+"NEW2.gif"
+
+  DELETE = new Array( new Image(), new Image() )
+  DELETE[0].src = vImgRef+"DELETE1.gif"
+  DELETE[1].src = vImgRef+"DELETE2.gif"
+
+  SAVE = new Array( new Image(), new Image() )
+  SAVE[0].src = vImgRef+"SAVE1.gif"
+  SAVE[1].src = vImgRef+"SAVE2.gif"
+
+  PREF = new Array( new Image(), new Image() )
+  PREF[0].src = vImgRef+"PREF1.gif"
+  PREF[1].src = vImgRef+"PREF2.gif"
+
+  LIST = new Array( new Image(), new Image() )
+  LIST[0].src = vImgRef+"LIST1.gif"
+  LIST[1].src = vImgRef+"LIST2.gif"
+
+  HELP = new Array( new Image(), new Image() )
+  HELP[0].src = vImgRef+"HELP1.gif"
+  HELP[1].src = vImgRef+"HELP2.gif"
+
+  FRMHLP = new Array( new Image(), new Image() )
+  FRMHLP[0].src = vImgRef+"FRMHLP1.gif"
+  FRMHLP[1].src = vImgRef+"FRMHLP2.gif"
+
+//  Navigation Buttons 
+  FIRST = new Array( new Image(), new Image() )
+  FIRST[0].src = vImgRef+"FIRST1.gif"
+  FIRST[1].src = vImgRef+"FIRST2.gif"
+
+  PREV = new Array( new Image(), new Image() )
+  PREV[0].src = vImgRef+"PREV1.gif"
+  PREV[1].src = vImgRef+"PREV2.gif"
+
+  NEXT = new Array( new Image(), new Image() )
+  NEXT[0].src = vImgRef+"NEXT1.gif"
+  NEXT[1].src = vImgRef+"NEXT2.gif"
+
+  LAST = new Array( new Image(), new Image() )
+  LAST[0].src = vImgRef+"LAST1.gif"
+  LAST[1].src = vImgRef+"LAST2.gif"
+
+//  User Form Buttons
+  USRGRP = new Array( new Image(), new Image() )
+  USRGRP[0].src = vImgRef+"USRGRP1.gif"
+  USRGRP[1].src = vImgRef+"USRGRP2.gif"
+
+//  Group Form Buttons
+  GRPUSR = new Array( new Image(), new Image() )
+  GRPUSR[0].src = vImgRef+"GRPUSR1.gif"
+  GRPUSR[1].src = vImgRef+"GRPUSR2.gif"
+
+//  Client Form Buttons
+  ASSITM = new Array( new Image(), new Image() )
+  ASSITM[0].src = vImgRef+"ASSITM1.gif"
+  ASSITM[1].src = vImgRef+"ASSITM2.gif"
+
+//  Employee Form Buttons
+  EMPFUN = new Array( new Image(), new Image() )
+  EMPFUN[0].src = vImgRef+"EMPFUN1.gif"
+  EMPFUN[1].src = vImgRef+"EMPFUN2.gif"
+
+//  Address Form Buttons
+  MEADDR = new Array( new Image(), new Image() )
+  MEADDR[0].src = vImgRef+"MEADDR1.gif"
+  MEADDR[1].src = vImgRef+"MEADDR2.gif"
+
+  NEADDR = new Array( new Image(), new Image() )
+  NEADDR[0].src = vImgRef+"NEADDR1.gif"
+  NEADDR[1].src = vImgRef+"NEADDR2.gif"
+
+  MOADDR = new Array( new Image(), new Image() )
+  MOADDR[0].src = vImgRef+"MOADDR1.gif"
+  MOADDR[1].src = vImgRef+"MOADDR2.gif"
+
+  NOADDR = new Array( new Image(), new Image() )
+  NOADDR[0].src = vImgRef+"NOADDR1.gif"
+  NOADDR[1].src = vImgRef+"NOADDR2.gif"
+
+//  Item Form Buttons
+  ASSCLNT = new Array( new Image(), new Image() )
+  ASSCLNT[0].src = vImgRef+"ASSCLNT1.gif"
+  ASSCLNT[1].src = vImgRef+"ASSCLNT2.gif"
+
+  ITMRATE = new Array( new Image(), new Image() )
+  ITMRATE[0].src = vImgRef+"ITMRATE1.gif"
+  ITMRATE[1].src = vImgRef+"ITMRATE2.gif"
+
+  NITMRT = new Array( new Image(), new Image() )
+  NITMRT[0].src = vImgRef+"NITMRT1.gif"
+  NITMRT[1].src = vImgRef+"NITMRT2.gif"
+
+  MITMRT = new Array( new Image(), new Image() )
+  MITMRT[0].src = vImgRef+"MITMRT1.gif"
+  MITMRT[1].src = vImgRef+"MITMRT2.gif"
+
+//  Delivery Form Buttons
+  NEWDEL = new Array( new Image(), new Image() )
+  NEWDEL[0].src = vImgRef+"NEWDEL1.gif"
+  NEWDEL[1].src = vImgRef+"NEWDEL2.gif"
+
+//  Order Form Buttons
+  ORDOPN = new Array( new Image(), new Image() )
+  ORDOPN[0].src = vImgRef+"ORDOPN1.gif"
+  ORDOPN[1].src = vImgRef+"ORDOPN2.gif"
+
+  TEMPORD = new Array( new Image(), new Image() )
+  TEMPORD[0].src = vImgRef+"TEMPORD1.gif"
+  TEMPORD[1].src = vImgRef+"TEMPORD2.gif"
+
+  SELITM = new Array( new Image(), new Image() )
+  SELITM[0].src = vImgRef+"SELITM1.gif"
+  SELITM[1].src = vImgRef+"SELITM2.gif"
+
+  SELORD = new Array( new Image(), new Image() )
+  SELORD[0].src = vImgRef+"SELORD1.gif"
+  SELORD[1].src = vImgRef+"SELORD2.gif"

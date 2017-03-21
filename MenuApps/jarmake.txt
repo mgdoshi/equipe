@@ -1,0 +1,1 @@
+jar cvf menudemo.jar IMenu.class IMenuItem.class IMenuWin.class IPane.class IStatusBar.class MenuApplet$MenuVect.class MenuApplet$Vect.class checkMinimise.class MenuApplet.class Submenu.gif Menu.txt

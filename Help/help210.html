@@ -1,0 +1,255 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <meta name="GENERATOR" content="Mozilla/4.5 [en] (WinNT; I) [Netscape]">
+</head>
+<body background="BACKGR2.gif">
+<form><a NAME="Form :- Client/T"></a><b>Form :- Client /T</b>
+<br>&nbsp;
+<table ALIGN=LEFT BORDER=0 COLS=2 WIDTH="100%" 1 >
+<tr>
+<td WIDTH="15%"><img SRC="/ordimg/BP_Button/NEW1.gif" NAME="NEW" ALT="Create New Client" BORDER=0 ></td>
+
+<td>To create new client click Create New Client button. On clicking ,
+form <a href="#Form :- Client/I">Client/I</a>is selected in which details
+of new client can be inserted.</td>
+</tr>
+
+<tr>
+<td><img SRC="/ordimg/BP_Button/DELETE1.gif" NAME="DELETE" ALT="Delete Client" BORDER=0 ></td>
+
+<td>Click the check box in the table to delete the items corresponding
+to it.</td>
+</tr>
+
+<tr>
+<td><img SRC="/ordimg/BP_Button/FRMHLP1.gif" NAME="FRMHLP" ALT="Client Form Information" BORDER=0 height=23 width=23></td>
+
+<td>You get information about Client form on clicking Client Form Information
+button .</td>
+</tr>
+
+<tr>
+<td><img SRC="/ordimg/BP_Button/HELP1.gif" ALT="Client Form Help" BORDER=0 height=24 width=22></td>
+
+<td>You get help about Client Form on clicking Client Form Help button
+.</td>
+</tr>
+</table>
+.
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<table BORDER=0 BGCOLOR="#FFFFCA" >
+<tr>
+<th BGCOLOR="#666666"><font face="Arial"><font color="#FFFFFF"><font size=-1>Client
+ID</font></font></font></th>
+
+<th BGCOLOR="#666666"><font face="Arial"><font color="#FFFFFF"><font size=-1>Client
+Code</font></font></font></th>
+
+<th BGCOLOR="#666666"><font face="Arial"><font color="#FFFFFF"><font size=-1>Client
+Type</font></font></font></th>
+
+<th BGCOLOR="#666666"><font face="Arial"><font color="#FFFFFF"><font size=-1>Client
+Name</font></font></font></th>
+
+<th BGCOLOR="#666666"><font face="Arial"><font color="#FFFFFF"><font size=-1>Client
+Desc</font></font></font></th>
+
+<th BGCOLOR="#666666"><font face="Arial"><font color="#FFFFFF"><font size=-1>Delete</font></font></font></th>
+</tr>
+
+<tr>
+<td ALIGN=LEFT><a href="#Form :- Client/U">Client # 25</a></td>
+
+<td ALIGN=LEFT>INT</td>
+
+<td ALIGN=LEFT>Supplier</td>
+
+<td ALIGN=LEFT>Internal</td>
+
+<td ALIGN=LEFT>&nbsp;</td>
+
+<td ALIGN=LEFT><input TYPE=checkbox NAME=nDelete VALUE=25></td>
+</tr>
+</table>
+
+<p>To update the Client name click the Serial No.( Client # 25) corresponding&nbsp;
+to the Description in the row . On clicking Client # 25 , form Client /
+U is selected which displays the updation form.
+<p>
+<hr><a NAME="Form :- Client/I"></a><b>Form :- Client /I</b>
+<br>&nbsp;
+<table ALIGN=LEFT BORDER=0 COLS=2 WIDTH="100%" 1 >
+<tr>
+<td WIDTH="15%"><img SRC="/ordimg/BP_Button/SAVE1.gif" NAME="SAVE" ALT="Save Client" BORDER=0 ></td>
+
+<td>To save new client click Save Client button.</td>
+</tr>
+
+<tr>
+<td><img SRC="/ordimg/BP_Button/NSAVE1.gif" NAME="NSAVE" ALT="Save Client And Create New Client" BORDER=0 ></td>
+
+<td>To save and create new client click Save Client And Create New Client
+Button . On clicking Client existing in the form is saved and form Client/I
+is selected where again&nbsp; new client can be created .</td>
+</tr>
+
+<tr>
+<td><img SRC="/ordimg/BP_Button/NEADDR1.gif" NAME="NEADDR" ALT="Create New Address" BORDER=0 ></td>
+
+<td>On clicking Create new Address , insert address form is selected where
+details of the new client address can be inserted.</td>
+</tr>
+
+<tr>
+<td><img SRC="/ordimg/BP_Button/FRMHLP1.gif" NAME="FRMHLP" ALT="Client Form Information" BORDER=0 ></td>
+
+<td>You get information about Client Form on clicking Client Form Information
+button .</td>
+</tr>
+
+<tr>
+<td><img SRC="/ordimg/BP_Button/HELP1.gif" ALT="Client Form Help" BORDER=0 height=24 width=22></td>
+
+<td>You get help about Client Form on clicking Client Form Help button
+.</td>
+</tr>
+</table>
+
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<table ALIGN=LEFT BORDER=0 COLS=2 WIDTH="60%" 1 >
+<tr ALIGN=LEFT>
+<td WIDTH="25%"><font face="Arial"><font color="#000000"><font size=-1>Client
+Code</font></font><font color="#FF0000"><font size=+1> <b>*</b></font></font></font></td>
+
+<td><input TYPE="text" NAME="vClient_Code" SIZE="5" MAXLENGTH="2" onBlur="this.value=this.value.toUpperCase()"></td>
+</tr>
+
+<tr ALIGN=LEFT>
+<td><font face="Arial"><font color="#000000"><font size=-1>Client Type</font></font></font></td>
+
+<td><select NAME="vClient_Type"><option VALUE="" ><option VALUE="A"><font face="Arial"><font color="#000000"><font size=+0>Agent<option VALUE="C">Consumer<option VALUE="D">Dealer<option VALUE="S">Distributor<option VALUE="I">Internal
+Client<option VALUE="P">Supplier<option VALUE="T">Transporter<option VALUE="W">Warehouse</font></font></font></select></td>
+</tr>
+
+<tr ALIGN=LEFT>
+<td><font face="Arial"><font color="#000000"><font size=-1>Client Name</font></font><b><font color="#FF0000"><font size=+1>*</font></font></b></font></td>
+
+<td><input TYPE="text" NAME="vClient_Name" SIZE="15" MAXLENGTH="30" onBlur="this.value=this.value.toUpperCase()"></td>
+</tr>
+
+<tr ALIGN=LEFT>
+<td><font face="Arial"><font color="#000000"><font size=-1>Description&nbsp;</font></font></font></td>
+
+<td><input TYPE="text" NAME="vClient_Desc" SIZE="30" MAXLENGTH="100"></td>
+</tr>
+</table>
+
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<p>
+<hr><a NAME="Form :- Client/U"></a><b>Form :- Client /U</b>
+<br>&nbsp;
+<table ALIGN=LEFT BORDER=0 COLS=2 WIDTH="100%" 1 >
+<tr>
+<td WIDTH="15%"><img SRC="/ordimg/BP_Button/SAVE1.gif" NAME="SAVE" ALT="Update Client" BORDER=0 ></td>
+
+<td>Once Client is updated , on clicking Update Client button , form <a href="#Form :- Client/T">Client/T</a>
+is selected in which the updation is reflected.</td>
+</tr>
+
+<tr>
+<td><img SRC="/ordimg/BP_Button/NEADDR1.gif" NAME="NEADDR" ALT="Create New Address" BORDER=0 ></td>
+
+<td>New address of the updated client can be inserted by clicking Create
+New Address button .</td>
+</tr>
+
+<tr>
+<td><img SRC="/ordimg/BP_Button/MEADDR1.gif" NAME="MEADDR" ALT="Update Address" BORDER=0 ></td>
+
+<td>Address of client can be updated by clicking Update Address button.&nbsp;</td>
+</tr>
+
+<tr>
+<td><img SRC="/ordimg/BP_Button/FRMHLP1.gif" NAME="FRMHLP" ALT="Client Form Information" BORDER=0 ></td>
+
+<td>You get information about Client Form on clicking Client Form Information
+button .</td>
+</tr>
+
+<tr>
+<td><img SRC="/ordimg/BP_Button/HELP1.gif" ALT="Client Form Help" BORDER=0 height=24 width=22></td>
+
+<td>You get help about Client Form on clicking Client Form Help button
+.</td>
+</tr>
+</table>
+
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<table ALIGN=LEFT BORDER=0 COLS=2 WIDTH="60%" 1 >
+<tr ALIGN=LEFT>
+<td WIDTH="25%"><font face="Arial"><font color="#000000"><font size=-1>Client
+Code</font></font><font color="#FF0000"><font size=+1> <b>*</b></font></font></font></td>
+
+<td><input TYPE="text" NAME="vClient_Code" SIZE="5" MAXLENGTH="2" VALUE="BE" onBlur="this.value=this.value.toUpperCase()"></td>
+</tr>
+
+<tr ALIGN=LEFT>
+<td><font face="Arial"><font color="#000000"><font size=-1>Client Type</font></font></font></td>
+
+<td><select NAME="vClient_Type"><option VALUE="" ><option VALUE="A"><font face="Arial"><font color="#000000"><font size=+0>Agent<option VALUE="C">Consumer<option VALUE="D">Dealer<option VALUE="S">Distributor<option VALUE="I">Internal
+Client<option SELECTED VALUE="P">Supplier<option VALUE="T">Transporter<option VALUE="W">Warehouse</font></font></font></select></td>
+</tr>
+
+<tr ALIGN=LEFT>
+<td><font face="Arial"><font color="#000000"><font size=-1>Client Name</font></font><b><font color="#FF0000"><font size=+1>*</font></font></b></font></td>
+
+<td><input TYPE="text" NAME="vClient_Name" SIZE="15" MAXLENGTH="30" VALUE="INSYS" onBlur="this.value=this.value.toUpperCase()"></td>
+</tr>
+
+<tr ALIGN=LEFT>
+<td><font face="Arial"><font color="#000000"><font size=-1>Description&nbsp;</font></font></font></td>
+
+<td><input TYPE="text" NAME="vClient_Desc" SIZE="30" MAXLENGTH="100"></td>
+</tr>
+</table>
+
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<p>
+<hr></form>
+</body>
+</html>

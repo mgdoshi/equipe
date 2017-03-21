@@ -1,0 +1,180 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <meta name="GENERATOR" content="Mozilla/4.5 [en] (WinNT; I) [Netscape]">
+</head>
+<body background="BACKGR2.gif">
+<form><b>Form :- Client Wise Report /Q</b>
+<br>&nbsp;
+<table ALIGN=LEFT BORDER=0 COLS=2 WIDTH="100%" 1 >
+<tr>
+<td WIDTH="15%"><img SRC="QRYLST1.gif" NAME="QRYLST" ALT="Client Wise Report" BORDER=0 ></td>
+
+<td>On clicking Client Wise Report button , form <a href="#Form :- Client Wise Report /Q">Client
+Wise Report /Q</a> is selected where you can&nbsp;
+<br>see the report .</td>
+</tr>
+
+<tr>
+<td><img SRC="FRMHLP1.gif" NAME="FRMHLP" ALT="Client Wise Report Form Information" BORDER=0 ></td>
+
+<td>You get information about Client wise report form on clicking Client
+Wise Report Form Information button .</td>
+</tr>
+
+<tr>
+<td><img SRC="HELP1.gif" ALT="Client Wise Report Form Help" BORDER=0 height=24 width=22></td>
+
+<td>You get help about Client Wise Report Form on clicking Client Wise
+Report Form Help button .</td>
+</tr>
+</table>
+
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<table ALIGN=LEFT BORDER=0 COLS=4 WIDTH="80%" 1 >
+<tr ALIGN=LEFT>
+<td WIDTH="15%"><font face="Arial"><font color="#000000"><font size=-1>Client
+Name</font></font><font color="#FF0000"><font size=+1> <b>*</b></font></font></font></td>
+
+<td COLSPAN="2"><select NAME="pnClientID"><option VALUE="" ><option VALUE="1"><font face="Arial"><font color="#000000"><font size=+0>INTERNAL</font></font></font></select></td>
+</tr>
+
+<tr ALIGN=LEFT>
+<td><font face="Arial"><font color="#000000"><font size=-1>Date From</font></font></font></td>
+
+<td COLSPAN="2"><input TYPE="text" NAME="dFrom_Date" SIZE="10" MAXLENGTH="10" onBlur="top.check_date(this)"><font face="Arial"><font color="#000000"><font size=-1>DD.MM.YYYY</font></font></font></td>
+</tr>
+
+<tr ALIGN=LEFT>
+<td><font face="Arial"><font color="#000000"><font size=-1>Date To</font></font></font></td>
+
+<td COLSPAN="2"><input TYPE="text" NAME="dTo_Date" SIZE="10" MAXLENGTH="10" onBlur="top.check_date(this)"><font face="Arial"><font color="#000000"><font size=-1>DD.MM.YYYY</font></font></font></td>
+</tr>
+
+<tr ALIGN=LEFT>
+<td><font face="Arial"><font color="#000000"><font size=-1>Report</font></font></font></td>
+
+<td COLSPAN="2"><input TYPE="radio" NAME="vYear" VALUE="Q" CHECKED>&nbsp;&nbsp;&nbsp;
+Quarterly&nbsp;<input TYPE="radio" NAME="vYear" VALUE="M">&nbsp;&nbsp;&nbsp;
+Monthly</td>
+</tr>
+
+<tr ALIGN=LEFT>
+<td><font face="Arial"><font color="#000000"><font size=-1>Item Name</font></font></font></td>
+
+<td WIDTH="20%"><input TYPE="text" NAME="vItem_Name" SIZE="10" MAXLENGTH="30" VALUE="%" onBlur="this.value=this.value.toUpperCase()"></td>
+
+<td WIDTH="15%"><font face="Arial"><font color="#000000"><font size=-1>Item
+Class</font></font></font></td>
+
+<td><select NAME="nFk_ItemClass_ID"><option VALUE="" ><option VALUE="1"><font face="Arial"><font color="#000000"><font size=+0>ACCESSORIES<option VALUE="6">FRUITS<option VALUE="11">AUTO<option VALUE="31">ACESSORIES<option VALUE="26">VEGETABLES</font></font></font></select></td>
+</tr>
+
+<tr ALIGN=LEFT>
+<td><font face="Arial"><font color="#000000"><font size=-1>Item Group</font></font></font></td>
+
+<td><select NAME="nFk_ItemGroup_ID"><option VALUE="" ><option VALUE="1"><font face="Arial"><font color="#000000"><font size=+0>ACCESSORIES<option VALUE="21">DESCORATIVE
+ITEM<option VALUE="11">HGT</font></font></font></select></td>
+
+<td><font face="Arial"><font color="#000000"><font size=-1>CostCentre Name</font></font></font></td>
+
+<td><select NAME="nFk_CostCentre_ID"><option VALUE="" ><option VALUE="1"><font face="Arial"><font color="#000000"><font size=+0>MARKETING<option VALUE="2">PRODUCTION<option VALUE="16">ACESSORIES<option VALUE="11">DISTRIBUTOR</font></font></font></select></td>
+</tr>
+
+<tr ALIGN=LEFT>
+<td><font face="Arial"><font color="#000000"><font size=-1>Order Status</font></font></font></td>
+
+<td><input TYPE="checkbox" NAME="vOrdStat" VALUE="Z">&nbsp;&nbsp;&nbsp;
+Closed</td>
+
+<td><input TYPE="checkbox" NAME="vOrdStat" VALUE="A">&nbsp;&nbsp;&nbsp;
+Draft</td>
+
+<td><input TYPE="checkbox" NAME="vOrdStat" VALUE="J">&nbsp;&nbsp;&nbsp;
+InProcess</td>
+</tr>
+
+<tr ALIGN=LEFT>
+<td></td>
+
+<td><input TYPE="checkbox" NAME="vOrdStat" VALUE="D">&nbsp;&nbsp;&nbsp;
+Open</td>
+
+<td><input TYPE="checkbox" NAME="vOrdStat" VALUE="G">&nbsp;&nbsp;&nbsp;
+OpenReceived</td>
+
+<td><input TYPE="checkbox" NAME="vOrdStat" VALUE="U">&nbsp;&nbsp;&nbsp;
+Received</td>
+</tr>
+
+<tr ALIGN=LEFT>
+<td></td>
+
+<td><input TYPE="checkbox" NAME="vOrdStat" VALUE="R">&nbsp;&nbsp;&nbsp;
+Shipped</td>
+</tr>
+</table>
+
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<p>
+<hr><a NAME="Form :- Client Wise Report /Q"></a><b>Form :- Client Wise
+Report /Q</b>
+<p><b>Report of Client :&nbsp; Internal</b>
+<br>&nbsp;
+<table ALIGN=LEFT BORDER=0 COLS=6 WIDTH="50%" BGCOLOR="#FFFFCA" 1 >
+<tr ALIGN=LEFT BGCOLOR="#666666">
+<td WIDTH="10%">&nbsp;&nbsp; <font face="Arial"><font color="#FFFFFF"><font size=-1>Quarterly</font></font></font>
+<br>&nbsp;&nbsp;&nbsp; <font face="Arial"><font color="#FFFFFF"><font size=-1>Item</font></font></font></td>
+
+<td ALIGN=CENTER WIDTH="8%"><font face="Arial"><font color="#FFFFFF"><font size=-1>Unit</font></font></font></td>
+
+<td ALIGN=CENTER WIDTH="8%"><font face="Arial"><font color="#FFFFFF"><font size=-1>JAN-MAR</font></font></font></td>
+
+<td ALIGN=CENTER WIDTH="8%"><font face="Arial"><font color="#FFFFFF"><font size=-1>APR-JUN</font></font></font></td>
+
+<td ALIGN=CENTER WIDTH="8%"><font face="Arial"><font color="#FFFFFF"><font size=-1>JUL-SEP</font></font></font></td>
+
+<td ALIGN=CENTER WIDTH="8%"><font face="Arial"><font color="#FFFFFF"><font size=-1>OCT-NOV</font></font></font></td>
+</tr>
+
+<tr ALIGN=LEFT>
+<td>Automobile Bulbs</td>
+
+<td>No.</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>40</td>
+
+<td>&nbsp;</td>
+</tr>
+</table>
+
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<p>
+<hr></form>
+</body>
+</html>

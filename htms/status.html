@@ -1,0 +1,47 @@
+<HTML>
+<HEAD>
+<script name = "javascript">
+
+function enableMenuApplet(flag)
+{
+  document.MenuApplet.enableMenuApplet(flag);
+}
+
+function GetMenu()
+{
+  setTimeOut( "GetBrowser()","1000");
+}
+
+function GetBrowser()
+{
+   if(document.MenuApplet)
+   {
+     if( navigator.appName == "Netscape")
+       document.MenuApplet.setBrowser("1");
+     else
+       document.MenuApplet.setBrowser("0");
+     return
+   }
+   else
+     GetMenu()  
+}
+
+</script>
+<META HTTP-EQUIV="Content-Type" content="text/html; charset=iso-8859-1">
+<TITLE>Document Title</TITLE>
+</HEAD>
+<BODY >
+<!-- Insert HTML here -->
+<APPLET NAME="MenuApplet" Archive="menudemo.jar" CODE="MenuApplet.class" width="100%" height=50 MAYSCRIPT>
+<PARAM name="DataSource" value="Menu.txt">
+<PARAM name="Img" value="/ordimg/SUBMENU.GIF">
+<PARAM name="Font" value="Arial,10">
+<PARAM name="Target" value="mid_frame">
+<PARAM name="Version" value="IE">
+<param name="bgcolor" value="237,224,179"> //Background Color of Menu
+<param name="fgcolor" value="0,0,0">  // Foreground Color of Menu
+<param name="shbgcolor" value="189,179,144">//  Color of Shadow which comes on MouseOver Event of MenuItem	
+<param name="shfgcolor" value="0,0,0">//  Color of Text which comes on MouseOver Event of MenuItem
+</APPLET>
+</BODY>
+</HTML>

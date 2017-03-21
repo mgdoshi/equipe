@@ -1,0 +1,24 @@
+<HTML>
+<HEAD>
+<SCRIPT name="JAVASCRIPT">
+function load()
+{
+    var nd = new Date()
+    var dd = nd.getDate()
+    var mm = nd.getMonth()
+    var yy = nd.getYear()
+    var date
+    date = dd + "." + mm + "." + yy
+	document.Top.setDate(date)
+}
+</SCRIPT>
+
+</HEAD>
+<applet code="Top.class" Name="Top" width="100%" height=30>
+<PARAM Name="clientname" value="Span Diagnostic" >
+<PARAM Name="appname" value="Order Entry and Tracking System." >
+<PARAM Name="date" value="DD.MM.YYYY">
+</applet>
+<BODY bgcolor=#cccccc onLoad="load()"> 
+</BODY>
+</HTML>

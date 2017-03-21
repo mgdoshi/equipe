@@ -1,0 +1,86 @@
+#FILESTART
+POPUPBEGIN, System, , , 1
+   MENUITEM, Logout, Logout of System, /JOrder/servlets/Logout, 1
+   MENUITEM, Change Password, Change Password, /JOrder/servlets/PassFrame?pvMode=U, 1
+POPUPEND
+POPUPBEGIN, Administration, , , 1
+  POPUPBEGIN, Security, , , 1
+     MENUITEM, User, User Information, /JOrder/servlets/UserFrame?pvMode=&pnUserID=, 1
+     MENUITEM, Group, Group Information, /JOrder/servlets/GroupFrame?pvMode=&pnGroupID=, 1
+     POPUPBEGIN, Rights Control, , , 1
+         MENUITEM, Menu, Menu, /JOrder/servlets/MenuSecFrame?pvMode=D&pvSecLevel=&pnRefID=, 1
+         MENUITEM, Object, Object Security Settings, /JOrder/servlets/ObjSecFrame?pvMode=D&pvParentObj=&pvObjType=&pvSecLevel=&pnRefID=, 1
+     POPUPEND
+     MENUITEM, Record Security, Record Security Information, /JOrder/servlets/RecSecFrame?pvMode=&pnRecSecID=, 1
+  POPUPEND
+  MENUITEM, Parameter, Parameter, /JOrder/servlets/ParamFrame?pvMode=N&pnParamID=, 1
+  MENUITEM, Message, Message, /JOrder/servlets/MsgFrame?pvMode=Q&pnMsgID=&pvWhereClause=, 1
+  MENUITEM, Configuration, Security Configuration, /JOrder/servlets/ConfigFrame?pvMode=Q&pnConfigID=&pvParentObj=&pnLangID=, 1
+  MENUITEM, News Data, News Data, /JOrder/servlets/NewsFrame?pvMode=&pnNewsID=&pnStartPos=1&pnRows=0, 1
+POPUPEND
+POPUPBEGIN, Standard Data, , , 1
+   POPUPBEGIN, Domain, , , 1
+     MENUITEM, Address Type, Address Type, /JOrder/servlets/DomainFrame?pvMode=N&pvDomain=ADDTYPE&pnHelpID=305, 1
+     MENUITEM, Client Type, Client Type, /JOrder/servlets/DomainFrame?pvMode=N&pvDomain=CLNTYPE&pnHelpID=306, 1
+     MENUITEM, Delivery Status, Delivery Status, /JOrder/servlets/DomainFrame?pvMode=N&pvDomain=DELSTAT&pnHelpID=307, 1
+     MENUITEM, Function Type, Function Type, /JOrder/servlets/DomainFrame?pvMode=N&pvDomain=FUNCTYPE&pnHelpID=308, 1
+     MENUITEM, Object Type, Object Type, /JOrder/servlets/DomainFrame?pvMode=N&pvDomain=OBJTYPE&pnHelpID=309, 1
+     MENUITEM, Operation Mode, Operation Mode, /JOrder/servlets/DomainFrame?pvMode=N&pvDomain=OPMODE&pnHelpID=310, 1
+     MENUITEM, Order Status, Order Status Information, /JOrder/servlets/DomainFrame?pvMode=N&pvDomain=ORDSTAT&pnHelpID=311, 1
+     MENUITEM, Parameter Class, Parameter Class, /JOrder/servlets/DomainFrame?pvMode=N&pvDomain=PARCLASS&pnHelpID=312, 1
+     MENUITEM, Parameter Type, Parameter Type, /JOrder/servlets/DomainFrame?pvMode=N&pvDomain=PARTYPE&pnHelpID=313, 1
+     MENUITEM, Security Level, Security Level, /JOrder/servlets/DomainFrame?pvMode=N&pvDomain=SECLEVEL&pnHelpID=314, 1
+     MENUITEM, Shipment Type, Shipment Type, /JOrder/servlets/DomainFrame?pvMode=N&pvDomain=SHIPMODE&pnHelpID=315, 1
+     MENUITEM, Unit, Unit, /JOrder/servlets/DomainFrame?pvMode=N&pvDomain=UNITTYPE&pnHelpID=316, 1
+     MENUITEM, Font Color, Font Color, /JOrder/servlets/DomainFrame?pvMode=N&pvDomain=FONTCOLOR&pnHelpID=317, 1
+     MENUITEM, Font Face, Font Face, /JOrder/servlets/DomainFrame?pvMode=N&pvDomain=FONTFACE&pnHelpID=318, 1
+     MENUITEM, Font Size, Font Size, /JOrder/servlets/DomainFrame?pvMode=N&pvDomain=FONTSIZE&pnHelpID=319, 1
+   POPUPEND
+   MENUITEM, Employee, Employee Data, /JOrder/servlets/EmployeeFrame?pvMode=N&pnEmployeeID=, 1
+   MENUITEM, Client, Client Data, /JOrder/servlets/ClientFrame?pvMode=&pnClientID=, 1
+   MENUITEM, Branch, Branch Data, /JOrder/servlets/BranchFrame?pvMode=&pnBranchID=, 1
+   MENUITEM, Cost Centre, Cost Centre, /JOrder/servlets/CostCenterFrame?pvMode=&pnCostCentreID=, 1
+   POPUPBEGIN, Item, , , 1
+     MENUITEM, Item Class, Item Class, /JOrder/servlets/ItemClsFrame?pvMode=&pnItemClassID=, 1
+     MENUITEM, Item Pack, Item Packaging, /JOrder/servlets/ItemPkFrame?pvMode=&pnItemPackID=, 1
+     MENUITEM, Item Group, Item Group, /JOrder/servlets/ItemGrpFrame?pvMode=&pnItemGroupID=, 1
+     MENUITEM, Item, Item Details, /JOrder/servlets/ItemFrame?pvMode=Q&pnItemID=&pvWhereClause=, 1
+     MENUITEM, ClientItem, Client Item Details, /JOrder/servlets/ClnItmFrame?pvMode=D&pnClientID=&pvItemName=, 1
+     MENUITEM, Item Rate, Item Rate Details, /JOrder/servlets/ItemRtFrame?pvMode=Q&pnItemRateID=&pvWhereClause=, 1
+     MENUITEM, ClientItem Rate, Client Item Rate Details, /JOrder/servlets/ClnItmRtFrame?pvMode=Q&pnClientID=&pnClientItemRateID=&pvWhereClause=, 1
+   POPUPEND
+   MENUITEM, Address, Address, /JOrder/servlets/AddressFrame?pvMode=D&pvRefType=&pnRefID=&pnAddressID=, 1
+   MENUITEM, Order Administration, Order Administration, Order Administration, 1
+   MENUITEM, User Relationships, User RelationShips, /JOrder/servlets/UserRelnFrame?pvMode=D&pvUserID=&pvUserRel=, 1
+POPUPEND
+POPUPBEGIN, Transaction, , , 1
+   POPUPBEGIN, Order Entry, , , 1
+     MENUITEM, Manual/Shopping Cart, Order Entry Manually OR Using Shopping Cart, /JOrder/servlets/PkOrder.ShowOrderFrame?pvMode=I&pnOrderID=&pnTemplateID=&pnShpCartID=&pnOrdDtlsCount=, 1
+     MENUITEM, Using Template, Order Entry Using Templates, /JOrder/servlets/PkOrder.ShowOrderFrame?pvMode=T&pnOrderID=&pnTemplateID=&pnShpCartID=&pnOrdDtlsCount=, 1
+   POPUPEND
+   MENUITEM, Order Maintenance, Order Maintenance, /JOrder/servlets/PkOrdMain.ShowOrderMaintainFrame?pvMode=Q&pnOrderID=&pnOrderDtlsID=&pvWhereClause=, 1
+   MENUITEM, Change Order Status, Change Order Status, /JOrder/servlets/PkStatus.ShowOrderStatusFrame?pvMode=Q&vFrom_Order_Nr=&vTo_Order_Nr=, 1
+   MENUITEM, Delivery Entry, Delivery Entry, /JOrder/servlets/PkDelvry.ShowDeliveryFrame?pvMode=C&pnDeliveryID=&pnClientID=&pvOrderNo=, 1
+   MENUITEM, Delivery Maintenance, Delivery Maintenance, /JOrder/servlets/PkDelvMain.ShowDelvMaintainFrame?pvMode=Q&pnDeliveryID=&pnDeliveryDtlsID=&pvWhereClause=, 1
+POPUPEND
+POPUPBEGIN, Special Task, , , 1
+   MENUITEM, Preferences, Preferences, /JOrder/servlets/PrefFrame, 1
+   MENUITEM, Define Order Template, Define Order Template, /JOrder/servlets/PkTemplate.ShowOrderTemplateFrame?pvMode=Q&pnTemplateID=, 1
+   MENUITEM, Shopping-Cart Configuarion, Shopping-Cart Configuarion, /JOrder/servlets/PkShopCart.ShowShoppingCartFrame?pvMode=Q&pnCartDefID=, 1
+   POPUPBEGIN, Report, , , 1
+      MENUITEM, Order Report, Order Report, /JOrder/servlets/PkOrdRep.ShowOrderReportFrame?pvMode=Q&vFrom_Order_Nr=&vTo_Order_Nr=&dFrom_Order_Dt=&dTo_Order_Dt=&cDM_OrdStat=&pnClientID=, 1
+      MENUITEM, Client Wise Order Report, Client Wise Order Report, /JOrder/servlets/PkClWise.ShowClientWiseReportFrame?pvMode=D, 1
+      MENUITEM, Pending Order Report, Purchase Order Report, /JOrder/servlets/PkPurRep.ShowPurchaseReportFrame?pvMode=Q&dFrom_Order_Dt=&dTo_Order_Dt=&pnClientID=&nFk_ItemGroup_ID=&nFk_ItemClass_ID=, 1
+      MENUITEM, Delivery Report, Delivery Report, /JOrder/servlets/PkDelvRep.ShowDeliveryReportFrame?pvMode=Q&vFrom_Delivery_Nr=&vTo_Delivery_Nr=&dFrom_Delivery_Dt=&dTo_Delivery_Dt=&cDM_DelStat=, 1
+      MENUITEM, Security Report, Security Report, /JOrder/servlets/PkSecRep.ShowSecReportFrame?pvMode=Q, 1
+   POPUPEND
+   MENUITEM, Data Export, Data Export, /ordhtm/temp1.html, 1
+POPUPEND
+POPUPBEGIN, Others, , , 1
+   MENUITEM, News Room, News Room, /JOrder/servlets/NewsRomFrame?pvMode=&pnStartPos=1&pnRows=0, 1
+   MENUITEM, Your Query/Suggestion/Feedback/Comment, Your Query/Suggestion/Feedback/Comment, /JOrder/servlets/ShowSuggestionQueryForm, 1
+   MENUITEM, Download Help Manual, Download Help Manual, Download Help Manual, 1
+   MENUITEM, Help, Help, /JOrder/servlets/ShowHelp?pnHelpID=1, 1
+   MENUITEM, About, About, /ordhtm/About.html, 1
+POPUPEND
+#FILEEND

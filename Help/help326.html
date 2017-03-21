@@ -1,0 +1,353 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <meta name="GENERATOR" content="Mozilla/4.5 [en] (WinNT; I) [Netscape]">
+</head>
+<body background="BACKGR2.gif">
+<form><b>Form :- Client Item Rate / Q</b>
+<br>&nbsp;
+<table ALIGN=LEFT BORDER=0 COLS=2 WIDTH="100%" 1 >
+<tr>
+<td WIDTH="15%"><img SRC="/ordimg/BP_Button/QRYTAB1.gif" NAME="QRYTAB" ALT="Client Item Rates Query Details" BORDER=0 height=23 width=23>&nbsp;</td>
+
+<td>Once you have given the Client name , on clicking the Client Item Rates
+Query Details button , form
+<a href="#Form :- Client Item Rate / T">Client
+Item Rate/T</a> is selected which gives you the details of Qyery generated
+by you.</td>
+</tr>
+
+<tr>
+<td><img SRC="/ordimg/BP_Button/NEW1.gif" NAME="NEW" ALT="Create New Client Item Rates" BORDER=0 ></td>
+
+<td>On clicking Create New Client Item Rate button , form <a href="#Form :- Client Item Rate /I">Client
+Item Rate / I</a> is selected where you can insert your new rates .</td>
+</tr>
+
+<tr>
+<td><img SRC="/ordimg/BP_Button/FRMHLP1.gif" NAME="FRMHLP" ALT="Client Item Rate Form Information" BORDER=0 ></td>
+
+<td>You get the information about Client Item rate form on clicking Client
+Item Rate Information Form button.</td>
+</tr>
+
+<tr>
+<td><img SRC="/ordimg/BP_Button/HELP1.gif" NAME="HELP" ALT="Client Item Rate Form Help" BORDER=0 ></td>
+
+<td>You get help about Client Item rate form on clicking Client Item Rate
+Information Form button.</td>
+</tr>
+</table>
+
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<center><table ALIGN=LEFT BORDER=0 COLS=2 WIDTH="50%" 1 >
+<tr ALIGN=LEFT>
+<td><font face="Arial"><font color="#000000"><font size=-1>Client Name</font></font><b><font color="#FF0000"><font size=+1>*</font></font></b></font></td>
+
+<td><select NAME="nFk_Client_ID"><option VALUE="" ><option VALUE="25"><font face="Arial"><font color="#000000"><font size=+0>Internal</font></font></font><option VALUE="1"></select></td>
+</tr>
+
+<tr ALIGN=LEFT>
+<td><font face="Arial"><font color="#000000"><font size=-1>Item Name</font></font></font></td>
+
+<td><input TYPE="text" NAME="vItem_Name" SIZE="15" MAXLENGTH="100" VALUE="%" onBlur="this.value=this.value.toUpperCase()"></td>
+</tr>
+
+<tr ALIGN=LEFT>
+<td><font face="Arial"><font color="#000000"><font size=-1>From Date</font></font></font></td>
+
+<td><input TYPE="text" NAME="dFrom_Dt" SIZE="10" MAXLENGTH="100" onBlur="top.check_date(this)"><font face="Arial"><font color="#000000"><font size=-1>DD.MM.YYYY</font></font></font></td>
+</tr>
+
+<tr ALIGN=LEFT>
+<td><font face="Arial"><font color="#000000"><font size=-1>To Date</font></font></font></td>
+
+<td><input TYPE="text" NAME="dTo_Dt" SIZE="10" MAXLENGTH="100" onBlur="top.check_date(this)"><font face="Arial"><font color="#000000"><font size=-1>DD.MM.YYYY</font></font></font></td>
+</tr>
+
+<tr ALIGN=LEFT>
+<td><font face="Arial"><font color="#000000"><font size=-1>Min Qty</font></font></font></td>
+
+<td><input TYPE="text" NAME="nMinQty" SIZE="10" MAXLENGTH="100" onBlur="top.check_num(this)"></td>
+</tr>
+
+<tr ALIGN=LEFT>
+<td><font face="Arial"><font color="#000000"><font size=-1>Max Qty</font></font></font></td>
+
+<td><input TYPE="text" NAME="nMaxQty" SIZE="10" MAXLENGTH="100" onBlur="top.check_num(this)"></td>
+</tr>
+</table></center>
+
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<p>
+<hr><a NAME="Form :- Client Item Rate / T"></a><b>Form :- Client Item Rate
+/ T</b>
+<br>&nbsp;
+<table ALIGN=LEFT BORDER=0 COLS=2 WIDTH="100%" 1 >
+<tr>
+<td WIDTH="15%"><img SRC="/ordimg/BP_Button/DELETE1.gif" NAME="DELETE" ALT="Delete Client Item Rates" BORDER=0 ></td>
+
+<td>Click the check box in the table to delete the items corresponding
+to it.</td>
+</tr>
+
+<tr>
+<td><img SRC="/ordimg/BP_Button/FRMHLP1.gif" NAME="FRMHLP" ALT="Client Item Rate Form Information" BORDER=0 ></td>
+
+<td>You get the information about Client Item rate form on clicking Client
+Item Rate Information Form button.</td>
+</tr>
+
+<tr>
+<td><img SRC="/ordimg/BP_Button/HELP1.gif" NAME="HELP" ALT="Client Item Rate Form Help" BORDER=0 ></td>
+
+<td>You get help about Client Item rate form on clicking Client Item Rate
+Information Form button.</td>
+</tr>
+</table>
+
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<table ALIGN=LEFT BORDER=0 WIDTH="40%" >
+<tr ALIGN=LEFT>
+<td><font face="Arial"><font color="#000000"><font size=-1><b>Client :</b>&nbsp;
+Internal</font></font></font></td>
+</tr>
+</table>
+
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<table BORDER=0 BGCOLOR="#FFFFCA" >
+<tr>
+<th BGCOLOR="#666666"><font face="Arial"><font color="#FFFFFF"><font size=-1>CIRLink</font></font></font></th>
+
+<th BGCOLOR="#666666"><font face="Arial"><font color="#FFFFFF"><font size=-1>Item
+Name</font></font></font></th>
+
+<th BGCOLOR="#666666"><font face="Arial"><font color="#FFFFFF"><font size=-1>From
+Date</font></font></font></th>
+
+<th BGCOLOR="#666666"><font face="Arial"><font color="#FFFFFF"><font size=-1>To
+Date</font></font></font></th>
+
+<th BGCOLOR="#666666"><font face="Arial"><font color="#FFFFFF"><font size=-1>Min
+Qty</font></font></font></th>
+
+<th BGCOLOR="#666666"><font face="Arial"><font color="#FFFFFF"><font size=-1>Max
+Qty</font></font></font></th>
+
+<th BGCOLOR="#666666"><font face="Arial"><font color="#FFFFFF"><font size=-1>Price</font></font></font></th>
+
+<th BGCOLOR="#666666"><font face="Arial"><font color="#FFFFFF"><font size=-1>Active</font></font></font></th>
+
+<th BGCOLOR="#666666"><font face="Arial"><font color="#FFFFFF"><font size=-1>Delete</font></font></font></th>
+</tr>
+
+<tr>
+<td ALIGN=LEFT><a href="#Form :- ClientItemRate / U">CIR # 1</a></td>
+
+<td ALIGN=LEFT>Automobile Bulbs</td>
+
+<td ALIGN=LEFT>01-JAN-99</td>
+
+<td ALIGN=LEFT>01-JUN-99</td>
+
+<td ALIGN=LEFT>10</td>
+
+<td ALIGN=LEFT>100</td>
+
+<td ALIGN=LEFT>10</td>
+
+<td ALIGN=LEFT>Y</td>
+
+<td ALIGN=LEFT><input TYPE=checkbox NAME=vDelete VALUE=12></td>
+</tr>
+</table>
+
+<p>To update the Querry generated click the Serial No.( CIR # 1) corresponding&nbsp;
+to the Description in the row . On clicking&nbsp;&nbsp; CIR # 1 , form
+ClientItemRate /U is selected which displays the updation form.
+<p>
+<hr><a NAME="Form :- Client Item Rate /I"></a><b>Form :- Client Item Rate
+/I</b>
+<br>&nbsp;
+<table ALIGN=LEFT BORDER=0 COLS=2 WIDTH="100%" 1 >
+<tr>
+<td WIDTH="15%"><img SRC="/ordimg/BP_Button/SAVE1.gif" NAME="SAVE" ALT="Save Client Item Rates" BORDER=0 ></td>
+
+<td>Once Client Item rates have been inserted , on clicking Save Client
+Item Rates , from <a href="#Form :- Client Item Rate / T">Client Item Rate
+/T</a> is selected , where the updation is reflected .</td>
+</tr>
+
+<tr>
+<td><img SRC="/ordimg/BP_Button/FRMHLP1.gif" NAME="FRMHLP" ALT="Client Item Rate Form Information" BORDER=0 ></td>
+
+<td>You get the information about Client Item rate form on clicking Client
+Item Rate Information Form button.</td>
+</tr>
+
+<tr>
+<td><img SRC="/ordimg/BP_Button/HELP1.gif" NAME="HELP" ALT="Client Item Rate Form Help" BORDER=0 ></td>
+
+<td>You get help about Client Item rate form on clicking Client Item Rate
+Information Form button.</td>
+</tr>
+</table>
+
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<table BORDER=0 COLS=7 WIDTH="50%" 1 >
+<tr ALIGN=LEFT>
+<th>Item Name<font face="Arial"><font color="#FF0000"><font size=+1> <b>*</b></font></font></font></th>
+
+<th>From Date<font face="Arial"><font color="#FF0000"><font size=+1> <b>*</b></font></font></font></th>
+
+<th>To Date<font face="Arial"><font color="#FF0000"><font size=+1> <b>*</b></font></font></font></th>
+
+<th>Min Qty<font face="Arial"><font color="#FF0000"><font size=+1> <b>*</b></font></font></font></th>
+
+<th>Max Qty<font face="Arial"><font color="#FF0000"><font size=+1> <b>*</b></font></font></font></th>
+
+<th>Unit&nbsp;
+<br>Price<font face="Arial"><font color="#FF0000"><font size=+1> <b>*</b></font></font></font></th>
+
+<th>Active</th>
+</tr>
+
+<tr ALIGN=LEFT>
+<td></td>
+
+<th>DD.MM.YYYY</th>
+
+<th>DD.MM.YYYY</th>
+
+<td></td>
+
+<td></td>
+
+<td></td>
+</tr>
+
+<tr ALIGN=LEFT>
+<td><select NAME="nFk_ClientItem_ID"><option VALUE="" ><option VALUE="1">TIN<option VALUE="6">BULBS<option VALUE="8">COUPLING</select></td>
+
+<td><input TYPE="text" NAME="dFrom_Dt" SIZE="6" MAXLENGTH="20" onBlur="top.check_date(this)"></td>
+
+<td><input TYPE="text" NAME="dTo_Dt" SIZE="6" MAXLENGTH="20" onBlur="top.check_date(this)"></td>
+
+<td><input TYPE="text" NAME="nMinQty" SIZE="8" MAXLENGTH="20" onBlur="top.check_num(this)"></td>
+
+<td><input TYPE="text" NAME="nMaxQty" SIZE="8" MAXLENGTH="20" onBlur="top.check_num(this)"></td>
+
+<td><input TYPE="text" NAME="nUnitPrice" SIZE="8" MAXLENGTH="20" onBlur="top.check_num(this)"></td>
+
+<td ALIGN=CENTER><input TYPE="checkbox" NAME="cInActive" VALUE="on"></td>
+</tr>
+</table>
+
+<p>
+<hr><a NAME="Form :- ClientItemRate / U"></a><b>Form :- ClientItemRate
+/ U</b>
+<br>&nbsp;
+<table ALIGN=LEFT BORDER=0 COLS=2 WIDTH="100%" 1 >
+<tr>
+<td WIDTH="15%"><img SRC="/ordimg/BP_Button/SAVE1.gif" NAME="SAVE" ALT="Update Client Item Rate" BORDER=0 ></td>
+
+<td>Once the client item rate has been updated , on clicking Update Client
+Item Rate , form <a href="#Form :- Client Item Rate / T">Client Item Rate
+/T</a> is selected where the updateion is reflected .</td>
+</tr>
+
+<tr>
+<td><img SRC="/ordimg/BP_Button/FRMHLP1.gif" NAME="FRMHLP" ALT="Client Item Rate Form Information" BORDER=0 ></td>
+
+<td>You get the information about Client Item rate form on clicking Client
+Item Rate Information Form button.</td>
+</tr>
+
+<tr>
+<td><img SRC="/ordimg/BP_Button/HELP1.gif" NAME="HELP" ALT="Client Item Rate Form Help" BORDER=0 ></td>
+
+<td>You get help about Client Item rate form on clicking Client Item Rate
+Information Form button.</td>
+</tr>
+</table>
+
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<table ALIGN=LEFT BORDER=0 WIDTH="60%" >
+<tr ALIGN=LEFT>
+<td><font face="Arial"><font color="#000000"><font size=-1>From Date</font></font><b><font color="#FF0000"><font size=+1>*</font></font></b></font></td>
+
+<td><input TYPE="text" NAME="dFrom_Dt" SIZE="10" MAXLENGTH="10" VALUE="01.01.1999" onBlur="top.check_date(this)"><font face="Arial"><font color="#000000"><font size=-1>DD.MM.YYYY</font></font></font></td>
+</tr>
+
+<tr ALIGN=LEFT>
+<td><font face="Arial"><font color="#000000"><font size=-1>To Date</font></font><b><font color="#FF0000"><font size=+1>*</font></font></b></font></td>
+
+<td><input TYPE="text" NAME="dTo_Dt" SIZE="10" MAXLENGTH="10" VALUE="01.06.1999" onBlur="top.check_date(this)"><font face="Arial"><font color="#000000"><font size=-1>DD.MM.YYYY</font></font></font></td>
+</tr>
+
+<tr ALIGN=LEFT>
+<td><font face="Arial"><font color="#000000"><font size=-1>Min Qty</font></font><b><font color="#FF0000"><font size=+1>*</font></font></b></font></td>
+
+<td><input TYPE="text" NAME="nMinQty" SIZE="10" MAXLENGTH="100" VALUE="10" onBlur="top.check_num(this)"></td>
+</tr>
+
+<tr ALIGN=LEFT>
+<td><font face="Arial"><font color="#000000"><font size=-1>Max Qty</font></font><b><font color="#FF0000"><font size=+1>*</font></font></b></font></td>
+
+<td><input TYPE="text" NAME="nMaxQty" SIZE="10" MAXLENGTH="100" VALUE="100" onBlur="top.check_num(this)"></td>
+</tr>
+
+<tr ALIGN=LEFT>
+<td><font face="Arial"><font color="#000000"><font size=-1>Unit Price</font></font><b><font color="#FF0000"><font size=+1>*</font></font></b></font></td>
+
+<td><input TYPE="text" NAME="nUnitPrice" SIZE="10" MAXLENGTH="100" VALUE="10" onBlur="top.check_num(this)"></td>
+</tr>
+
+<tr ALIGN=LEFT>
+<td><font face="Arial"><font color="#000000"><font size=-1>Active</font></font></font></td>
+
+<td><input TYPE="hidden" NAME="cInActive" VALUE=""><input TYPE="checkbox" NAME="cInActive" CHECKED></td>
+</tr>
+</table>
+
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<p>
+<hr></form>
+</body>
+</html>

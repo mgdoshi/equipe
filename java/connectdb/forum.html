@@ -1,0 +1,310 @@
+<HTML><HEAD>
+<!-- Page produced by Web Crossing(r)/Unix-3.1 (http://webcrossing.com/) for Sun Microsystems2-P-->
+<!-- User interface (c)Copyright 1995-1998 by Lundeen & Associates. All rights reserved.-->
+<title>Java Discussion Forums - connection.prepareCall(HELP ME PLEASE)</title></HEAD>
+<body bgcolor=#FFFFFF><FORM NAME="seek1" METHOD="GET" ACTION="http://search.java.sun.com/query.html">
+<TABLE BORDER="0" CELLSPACING="0" CELLPADDING="0" WIDTH="100%">
+<TR ALIGN="CENTER" VALIGN="TOP">
+<TD WIDTH="157" ALIGN="LEFT">
+<IMG SRC="/Images/pixel.gif" HEIGHT="40" WIDTH="40">
+<A HREF="http://java.sun.com/index.html">
+<IMG SRC="/Images/javalogo52x88.gif" WIDTH="52" HEIGHT="88" ALT="Java Technology Home Page" BORDER="0"></A><BR>
+<IMG SRC="/Images/pixel.gif" WIDTH="157" HEIGHT="1" ALT="">
+</TD>
+<TD>
+<!-- need to restore in MAPA URL -->
+
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="0" WIDTH="100%">
+<TR valign=center>
+<TD ALIGN="RIGHT"><IMG SRC="/Images/stripelt.gif"></TD>
+<TD WIDTH="100%">
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="0" WIDTH="100%">
+<TR><TD BGCOLOR="#CC9966" WIDTH="100%"><IMG SRC="/Images/pixel.gif" HEIGHT="2"></TD></TR>
+<TR><TD><IMG SRC="/Images/pixel.gif" HEIGHT="2"></TD></TR>
+<TR><TD BGCOLOR="#CC9966"><IMG SRC="/Images/pixel.gif" HEIGHT="2"></TD></TR>
+<TR><TD><IMG SRC="/Images/pixel.gif" HEIGHT="2"></TD></TR>
+<TR><TD BGCOLOR="#CC9966"><IMG SRC="/Images/pixel.gif" HEIGHT="2"></TD></TR>
+<TR><TD><IMG SRC="/Images/pixel.gif" HEIGHT="2"></TD></TR>
+<TR><TD BGCOLOR="#CC9966"><IMG SRC="/Images/pixel.gif" HEIGHT="2"></TD></TR>
+</TABLE>
+</TD>
+<TD ALIGN="LEFT"><IMG SRC="/Images/stripert.gif"></TD>
+
+<TD valign=center>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="0">
+<TR>
+<TD VALIGN="CENTER"><A HREF="http://java.sun.com/a-z/index.html"><IMG SRC="/Images/azindex.gif" BORDER="0"></TD>
+<TD VALIGN="CENTER"><FONT FACE="Helvetica" SIZE="1">
+<INPUT TYPE="text" SIZE="15" MAXLENGTH="128" NAME=qt></FONT></TD>
+<TD VALIGN="CENTER">&nbsp;<INPUT TYPE="image" SRC="/Images/search.button.gif" value="search" BORDER="0"></TD>
+</TR>
+</TABLE>
+</TD>
+</TR>
+</TABLE>
+<P>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="0" CELLSPACING="0">
+<TR VALIGN="TOP">
+<TD WIDTH="100%"><IMG SRC="/Images/chiclet.row.gif" WIDTH="55" HEIGHT="18"></TD>
+<TD ROWSPAN="3" ALIGN="RIGHT" WIDTH="152">
+  <IMG SRC="/Images/developer.connection.header.gif"></TD>
+</TR>
+<TR VALIGN="TOP">
+<TD BGCOLOR="#CC9966" HEIGHT="1" WIDTH="100%"><IMG SRC="/Images/pixel.gif" HEIGHT="1"></TD>
+</TR>
+<TR VALIGN="TOP">
+<TD WIDTH="100%"><IMG SRC="/Images/spacer.gif"></TD>
+<TD ALIGN="RIGHT"></TD>
+</TR>
+</TABLE>
+</TD>
+</TR>
+</TABLE>
+</FORM>
+
+
+<table width=100% border=0 cellpadding=0 cellspacing=0><tr>
+<td valign=top><TABLE ALIGN="LEFT" CELLSPACING="0" CELLPADDING="0" BORDER="0" WIDTH=10%>
+<TR><TD>
+<TABLE BORDER="0" CELLSPACING="1" CELLPADDING="0" BGCOLOR="#FFFFFF" WIDTH="157" ALIGN="LEFT">
+<!-- the following spacer ensures that the table is at least 157 pixels wide   -->
+<TR><TD><IMG SRC="/Images/pixel.gif" WIDTH="157" HEIGHT="1" ALT=""></TD></TR>
+
+<!-- tab categories -->
+
+<TR><TD>&nbsp; <A HREF="http://java.sun.com/products/index.html">
+<IMG SRC="/Images/side.tab.products.gif" HEIGHT="15" WIDTH="130" BORDER="0" ALT="Downloads, APIs, Documentation"></A>
+</TD></TR>
+
+<TR><TD>&nbsp; <A HREF="http://developer.java.sun.com/developer/index.html">
+<IMG SRC="/Images/side.tab.developer.gif" HEIGHT="15" WIDTH="130" BORDER="0" ALT="Java Developer Connection"></A>
+</TD></TR>
+
+<TR><TD>&nbsp; <A HREF="http://developer.java.sun.com/developer/infodocs/index.shtml"> <IMG SRC="/Images/side.tab.docs.gif" HEIGHT="15" WIDTH="130" BORDER="0" ALT="Tutorials, Tech Articles, Training"></A>
+</TD></TR>
+
+<TR><TD>&nbsp; <A HREF="http://developer.java.sun.com/developer/support/index.html">
+<IMG SRC="/Images/side.tab.support.gif" HEIGHT="15" WIDTH="130" BORDER="0" ALT="Online Support"></A>
+</TD></TR>
+
+<TR><TD>&nbsp; <A HREF="http://developer.java.sun.com/developer/community/index.html">
+<IMG SRC="/Images/side.tab.community.gif" HEIGHT="15" WIDTH="130" BORDER="0" ALT="Community Discussion"></A>
+</TD></TR>
+
+<TR><TD>&nbsp; <A HREF="http://java.sun.com/industry/index.html">
+<IMG SRC="/Images/side.tab.news.gif" HEIGHT="15" WIDTH="130" BORDER="0" ALT="News & Events from Everywhere"></A>
+</TD></TR>
+
+<TR><TD>&nbsp; <A HREF="http://java.sun.com/solutions/index.html">
+<IMG SRC="/Images/side.tab.solutions.gif" HEIGHT="15" WIDTH="130" BORDER="0" ALT="Products from Everywhere"></A>
+</TD></TR>
+
+<TR><TD>&nbsp; <A HREF="http://java.sun.com/casestudies/index.html">
+<IMG SRC="/Images/side.tab.case.gif" HEIGHT="15" WIDTH="130" BORDER="0" ALT="How Java Technology is Used Worldwide"></A>
+</TD></TR>
+
+<TR><TD BGCOLOR="#FFFFFF"><IMG SRC="/Images/pixel.gif" WIDTH="1" HEIGHT="2" ALT="">
+</TD></TR>
+
+<tr><td height=40></td></tr>
+
+<tr><td>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="0" WIDTH="140">
+<TR><TD VALIGN="TOP">
+<FORM method=GET action="http://search.java.sun.com/query.html">
+<TABLE BORDER="0" WIDTH="100%" BGCOLOR="#FFFFFF" CELLPADDING="1" CELLSPACING="1">
+<TR><TD BGCOLOR="#FFCC66">
+<FONT FACE="Verdana, Helvetica, Arial, sans-serif" SIZE="-1">
+<B>Search Forums:</B>
+</FONT>
+</TD></TR>           
+<TR><TD VALIGN="TOP" ALIGN="CENTER">
+<FONT FACE="Verdana, Helvetica, Arial, sans-serif" SIZE="-2">
+<input type=hidden name=col value="nforum">
+<input type=hidden name=pw value="100%">
+<input type=hidden name=ws value="0">
+<input type=hidden name=nh value="10">
+<input type=text name=qt size=10 value="" maxlength=2033>
+<input type=submit value=" Search ">
+</FONT>
+</TD></TR>
+<TR><TD>
+<FONT FACE="Verdana, Helvetica, Arial, sans-serif" SIZE="-1">
+<input type=hidden name=M value=g>
+</FONT>
+</TD></TR>
+</TABLE>
+</FORM>
+</TD></TR>
+</TABLE>
+</td></tr>
+</TABLE>
+</td></tr>
+
+<tr><td height=20></td></tr>
+
+<tr><td>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="0" WIDTH="140" BGCOLOR="#FFFFFF">
+<tr><td>
+    <font size = -1>You must <a href="http://developer.java.sun.com/servlet/SessionServlet?action=showLogin&url=http://forum.java.sun.com:80/forum?">log in</a> to the JDC to participate in a forum.
+<p>
+If you're not a JDC member, you can <A HREF="http://developer.java.sun.com/servlet/Registration?redirect=http://forum.java.sun.com:80/forum?">register</A> now.  </font> </td></tr>
+</table>
+
+
+
+
+</td></tr>
+
+</TABLE>
+
+</td>
+
+<td valign=top> 
+<font size=-1><!----	<a href="http://developer.java.sun.com/developer/community/index.html">Community Discussion</a>-->	<!---	&nbsp;&gt;---><a href="/forum?14@252.9GLxaFqkfON^0@">Forums</a>&nbsp;&gt; <a href="/forum?14@252.9GLxaFqkfON^0@.ee76b62">Forum: JDBC(tm)</a></font>
+<hr>
+
+
+
+
+<table width=100% cellpadding=0 cellspacing=0 border=0><tr>
+<td align=left><font size=-1>
+<font color=#999999>Older Messages</font>&nbsp; | &nbsp; <font color=#999999>Newer Messages</font></font></td>
+
+<td align=center><font size=-1>
+<a href="/forum?14@252.9GLxaFqkfON^0@.ee8f65d">Previous Thread</a>&nbsp; | &nbsp; <a href="/forum?14@252.9GLxaFqkfON^0@.ee8f68a">Next Thread</a></font></td>
+
+<td align=right><font size=-1>
+<FONT SIZE="-1"><font color=#999999>Preferences</font>&nbsp; &nbsp;|&nbsp; &nbsp;<A HREF="/forum?help@252.9GLxaFqkfON^0@.ee8f671">Help</A></FONT>
+</font></td></tr></table>
+<br>
+<font size=+1><b>connection.prepareCall(HELP ME PLEASE)</b></font>
+<p>
+<table width=100% cellpadding=0 cellspacing=0 border=0>
+<tr>
+<td valign=top><font size=-1><b>
+02-aug-99</b> : 6:23 : Juanes 
+</font>
+</td>
+
+</tr>
+</table>
+Hello, 
+<p>I have spent 6 hours trying to create an CallableStatement object. What's wrong? I am using Personal Oracle 7 for Windows 95, jdk 1.2, and the Jdbc Odbc Driver. 
+<p>When you are obtaining an CallableStatement object, you are expected to copy a String to the method prepareCall() something like this: 
+<p>{call &lt;procedure-name&gt;[&lt;arg1&gt;,&lt;arg2&gt;, ...]} 
+<p>And I have done that. So I think... I have wrote: 
+<p>connection.prepareCall("{call MY_PROCEDURE[?, ?,?]}") 
+connection.prepareCall("{call MY_PROCEDURE [?, ?,?]}") 
+connection.prepareCall("{call MY_PROCEDURE ?, ?, ?}") 
+connection.prepareCall("call MY_PROCEDURE ?, ?, ?") 
+connection.prepareCall("call MY_PROCEDURE[?, ?, ?]") 
+connection.prepareCall("call MY_PROCEDURE [?, ?, ?]") 
+<p>And what I get is an SQL Exception "Invalid Statement". This is not working. 
+<p>Will you be so nice to help me...? 
+<p>my e-mail is: jjarami2@delta.eafit.edu.co<br>&nbsp;
+<hr>
+<table width=100% cellpadding=0 cellspacing=0 border=0>
+<tr valign=top>
+<td valign=top rowspan=2>
+<FONT SIZE=-1>
+<b>11-aug-99</b><br>
+9:31<br>
+jonbnews</font>
+</td>
+
+<td valign=top>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td valign=top><font size=-1>
+(#<a href="/forum?14@252.9GLxaFqkfON^0@.ee8f671/0">1</a> of 1)</font></td>
+
+</tr>
+
+<tr><td valign=top></td> <td valign=top colspan=2>
+<FONT SIZE=-1>Use parenthesis "(" instead of brackets "[". 
+<p><pre>connection.prepareCall("{call MY_PROCEDURE(?,?,?)}")</pre><br>&nbsp;
+</font></td>
+</tr>
+</table>
+<p>
+<table width=100% cellpadding=0 cellspacing=0 border=0><tr>
+<td align=left><font size=-1>
+<font color=#999999>Older Messages</font>&nbsp; | &nbsp; <font color=#999999>Newer Messages</font></font></td>
+
+<td align=center><font size=-1>
+<a href="/forum?14@252.9GLxaFqkfON^0@.ee8f65d">Previous Thread</a>&nbsp; | &nbsp; <a href="/forum?14@252.9GLxaFqkfON^0@.ee8f68a">Next Thread</a></font></td>
+
+<td align=right><font size=-1>
+<FONT SIZE="-1"><font color=#999999>Preferences</font>&nbsp; &nbsp;|&nbsp; &nbsp;<A HREF="/forum?help@252.9GLxaFqkfON^0@.ee8f671">Help</A></FONT>
+</font></td></tr></table>
+
+<p>
+<p> 
+
+</td></tr></table>
+
+<!-- Begin Footer Segment -->
+<BR CLEAR="ALL">
+<TABLE WIDTH="100%" CELLPADDING="0" BORDER="0" CELLSPACING="5">   
+<TR>
+<td height=5>
+</td>
+</tr>
+<tr>
+<TD BGCOLOR="#CCCCCC"><SPACER TYPE="BLOCK" HEIGHT="1" WIDTH="1"></TD>
+</TR>
+<TR>
+<TD>
+<CENTER>
+<FONT SIZE="-2">
+<A HREF="http://java.sun.com/products/index.html">Products &amp; APIs</A> | 
+<A HREF="http://developer.java.sun.com/developer/index.html">Developer Connection</A> | <A HREF="http://developer.java.sun.com/developer/infodocs/index.shtml">Docs &amp; Training</A> | <A HREF="http://developer.java.sun.com/developer/support/index.html">Online Support</A><BR> <A HREF="http://developer.java.sun.com/developer/community/index.html">Community Discussion</A> |
+<A HREF="http://java.sun.com/industry/index.html">Industry News</A> | 
+<A HREF="http://java.sun.com/solutions/index.html">Solutions Marketplace</A> | 
+<A HREF="http://java.sun.com/casestudies/index.html">Case Studies</A>
+</FONT>
+</CENTER>
+</TD>
+</TR>
+<TR>
+<TD BGCOLOR="#CCCCCC"><SPACER TYPE="BLOCK" HEIGHT="1" WIDTH="1"></TD>
+</TR>
+<TR>
+<TD>
+<CENTER>
+<FONT SIZE="-2">
+<a href="http://developer.java.sun.com/feedback/index.html">Feedback</a> | 
+<a href="http://www.dynamicdiagrams.net/mapa/cgi-bin/help.tcl? db=javasoft&dest=http://java.sun.com/db=javasoft&dest=http://java.sun.com/">Map</a> | 
+<A HREF="http://java.sun.com/a-z/index.html">A-Z Index</A>
+</FONT>
+</TD>
+</TR>
+<TR>
+<TD>
+<TABLE WIDTH="100%" CELLPADDING="0" BORDER="0" CELLSPACING="0">
+<TR>
+<TD WIDTH="50%">
+<FONT SIZE="-1">
+For information, call:<BR>
+(800) 786-7638<BR></FONT>
+<FONT SIZE="-2">
+Outside the U.S. and Canada, dial your country's 
+<A HREF="http://www .att.com/business_traveler/attdirecttollfree/.att.com/business_traveler/attdirecttollfree/">AT&amp;T&nbsp;Direct&nbsp;Access&nbsp;Number</A> first.<BR>
+</FONT>
+</TD>
+<TD ALIGN="RIGHT" WIDTH="50%">
+<A HREF="http://www.sun.com">
+<IMG SRC="/Images/lgsun.gif" width="64"
+height="30" border="0" ALT="Sun Microsystems, Inc."></A><BR>
+<FONT SIZE="-2">
+Copyright &copy; 1995-99
+<A HREF="http://www.sun.com">Sun Microsystems, Inc.</A><BR>
+All Rights Reserved. <a href="http://java.sun.com/share/copyright.html">Legal Terms</a>. 
+<A HREF="http://java.sun.com/share/privacy.html">Privacy&nbsp;Policy</A>.  </FONT>
+</TD>
+</TR>
+</TABLE>
+</TD>
+</TR> 
+</TABLE>
+<!-- End Footer Segment -->
+</BODY></HTML>

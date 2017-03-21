@@ -1,0 +1,791 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <meta name="GENERATOR" content="Mozilla/4.5 [en] (WinNT; I) [Netscape]">
+</head>
+<body background="BACKGR2.gif">
+<form><b>Form :- Order /Q</b>
+<br>&nbsp;
+<table ALIGN=LEFT BORDER=0 COLS=2 WIDTH="100%" 1 >
+<tr>
+<td WIDTH="15%"><img SRC="QRYTAB1.gif" NAME="QRYTAB" ALT="Order Query Details" BORDER=0 ></td>
+
+<td>On clicking Order Querry Details , form <a href="#Form :- Order /T">Order/T</a>
+is selected where details are shown .</td>
+</tr>
+
+<tr>
+<td><img SRC="FRMHLP1.gif" NAME="FRMHLP" ALT="Order Details Form Information" BORDER=0 ></td>
+
+<td>You get the information about Order Details form on clicking Order
+Report Form Information button.</td>
+</tr>
+
+<tr>
+<td><img SRC="HELP1.gif" ALT="Order Details Form Help" BORDER=0 height=24 width=22></td>
+
+<td>You get help about Order Dteails Form on clicking Order Details Form
+Help button .</td>
+</tr>
+</table>
+
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<table ALIGN=LEFT BORDER=0 COLS=2 WIDTH="60%" 1 >
+<tr ALIGN=LEFT>
+<td WIDTH="20%"><font face="Arial"><font color="#000000"><font size=-1>Client
+Name</font></font><font color="#FF0000"><font size=+1> <b>*</b></font></font></font></td>
+
+<td><select NAME="pnClientID"><option VALUE="" ><option VALUE="1"><font face="Arial"><font color="#000000"><font size=+0>INTERNAL</font></font></font></select></td>
+</tr>
+
+<tr ALIGN=LEFT>
+<td WIDTH="20%"><font face="Arial"><font color="#000000"><font size=-1>Order
+No From</font></font></font></td>
+
+<td><input TYPE="text" NAME="vOrder_Nr_From" SIZE="10" MAXLENGTH="30"></td>
+</tr>
+
+<tr ALIGN=LEFT>
+<td><font face="Arial"><font color="#000000"><font size=-1>Order No To</font></font></font></td>
+
+<td><input TYPE="text" NAME="vOrder_Nr_To" SIZE="10" MAXLENGTH="30"></td>
+</tr>
+
+<tr ALIGN=LEFT>
+<td><font face="Arial"><font color="#000000"><font size=-1>Order Date From</font></font></font></td>
+
+<td><input TYPE="text" NAME="dOrder_Dt_From" SIZE="10" MAXLENGTH="10" onBlur="top.check_date(this)"><font face="Arial"><font color="#000000"><font size=-1>DD.MM.YYYY</font></font></font></td>
+</tr>
+
+<tr ALIGN=LEFT>
+<td><font face="Arial"><font color="#000000"><font size=-1>Order Date To</font></font></font></td>
+
+<td><input TYPE="text" NAME="dOrder_Dt_To" SIZE="10" MAXLENGTH="10" onBlur="top.check_date(this)"><font face="Arial"><font color="#000000"><font size=-1>DD.MM.YYYY</font></font></font></td>
+</tr>
+
+<tr ALIGN=LEFT>
+<td><font face="Arial"><font color="#000000"><font size=-1>Order Status</font></font></font></td>
+
+<td><select NAME="cDM_OrdStat"><option VALUE="" ><option VALUE="A"><font face="Arial"><font color="#000000"><font size=+0>Draft<option VALUE="D">Open<option VALUE="G">OpenReceived<option VALUE="J">InProcess<option VALUE="R">Shipped<option VALUE="U">Received<option VALUE="Z">Closed</font></font></font></select></td>
+</tr>
+</table>
+
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<p>
+<hr><a NAME="Form :- Order /T"></a><b>Form :- Order /T</b>
+<br>&nbsp;
+<table ALIGN=LEFT BORDER=0 COLS=2 WIDTH="100%" 1 >
+<tr>
+<td WIDTH="15%"><img SRC="DELETE1.gif" NAME="DELETE" ALT="Delete Order" BORDER=0 ></td>
+
+<td>Click the check box in the table to delete the items corresponding
+to it.</td>
+</tr>
+
+<tr>
+<td><img SRC="FRMHLP1.gif" NAME="FRMHLP" ALT="Order Details Form Information" BORDER=0 ></td>
+
+<td>You get the information about Order Detail form on clicking Order Detail
+Form Information button.</td>
+</tr>
+
+<tr>
+<td><img SRC="HELP1.gif" ALT="Order Details Form Help" BORDER=0 height=24 width=22></td>
+
+<td>You get help about Order Dteails Form on clicking Order Details Form
+Help button .</td>
+</tr>
+</table>
+
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<table BORDER=0 BGCOLOR="#FFFFCA" >
+<tr>
+<th BGCOLOR="#666666"><font face="Arial"><font color="#FFFFFF"><font size=-1>Order
+ID</font></font></font></th>
+
+<th BGCOLOR="#666666"><font face="Arial"><font color="#FFFFFF"><font size=-1>Order
+Dtls</font></font></font></th>
+
+<th BGCOLOR="#666666"><font face="Arial"><font color="#FFFFFF"><font size=-1>Order
+No</font></font></font></th>
+
+<th BGCOLOR="#666666"><font face="Arial"><font color="#FFFFFF"><font size=-1>Order
+Date</font></font></font></th>
+
+<th BGCOLOR="#666666"><font face="Arial"><font color="#FFFFFF"><font size=-1>Order
+Status</font></font></font></th>
+
+<th BGCOLOR="#666666"><font face="Arial"><font color="#FFFFFF"><font size=-1>Delete</font></font></font></th>
+</tr>
+
+<tr>
+<td ALIGN=LEFT><a href="#Form :- OrderEntry /U">Order # 1</a></td>
+
+<td ALIGN=LEFT><a href="#Form :- Order Details /T">Order Dtls For # 1</a></td>
+
+<td ALIGN=LEFT>TIN/99/1/ING</td>
+
+<td ALIGN=LEFT>23.09.1999</td>
+
+<td ALIGN=LEFT>Open</td>
+
+<td ALIGN=LEFT><input TYPE=checkbox NAME=nDelete VALUE=1></td>
+</tr>
+</table>
+
+<p>To update the Order click the Serial No.( Order&nbsp; # 1) corresponding&nbsp;
+to the Description in the row . On clicking Order&nbsp; # 1 , form Order
+/U is selected ..
+<p>To update the Order Dtls click the Serial No.( Order Dtls For # 1) corresponding&nbsp;
+to the Description in the row . On clicking Order Dtls For # 1 , form Order
+Details /T is selected .
+<p>
+<hr><b></b>
+<p><a NAME="Form :- OrderEntry /U"></a><b>Form :- OrderEntry /U</b>
+<br>&nbsp;
+<table ALIGN=LEFT BORDER=0 COLS=2 WIDTH="100%" 1 >
+<tr>
+<td WIDTH="15%"><img SRC="SAVE1.gif" NAME="SAVE" ALT="Save Order Entry" BORDER=0 ></td>
+
+<td>Once the Order Entry is updated , on clicking form <a href="#Form :- Order /T">Order/T</a>
+is selected where the updation is reflected .</td>
+</tr>
+
+<tr>
+<td><img SRC="FRMHLP1.gif" NAME="FRMHLP" ALT="Order Form Information" BORDER=0 ></td>
+
+<td>You get the information about Order form on clicking Order Form Information
+button.</td>
+</tr>
+
+<tr>
+<td><img SRC="HELP1.gif" ALT="Order Details Form Help" BORDER=0 height=24 width=22></td>
+
+<td>You get help about Order Dteails Form on clicking Order Details Form
+Help button .</td>
+</tr>
+</table>
+
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<table BORDER=0 COLS=4 WIDTH="93%" 1 >
+<tr ALIGN=LEFT>
+<td WIDTH="13%">Order Status</td>
+
+<td>Draft<input TYPE="hidden" NAME="cDM_OrdStat" VALUE="A"></td>
+
+<td WIDTH="15%">Order No<b><font face="Arial"><font color="#FF0000"><font size=+1>*</font></font></font></b></td>
+
+<td>ORD/TIN/99/10/ING<input TYPE="hidden" NAME="vOrder_No" VALUE="ORD/TIN/99/10/ING"></td>
+</tr>
+
+<tr ALIGN=LEFT>
+<td>Order Date<font face="Arial"><font color="#FF0000"><font size=+1> <b>*</b></font></font></font></td>
+
+<td><input TYPE="text" NAME="dOrder_Dt" SIZE="12" MAXLENGTH="40" VALUE="23.09.1999" onBlur="top.check_date(this)">&nbsp;
+DD.MM.YYYY</td>
+
+<td>Exp Del Date</td>
+
+<td><input TYPE="text" NAME="dExpDel_Dt" SIZE="12" MAXLENGTH="40" onBlur="top.check_date(this)">&nbsp;
+DD.MM.YYYY</td>
+</tr>
+</table>
+
+<table BORDER=0 COLS=2 WIDTH="93%" 1 >
+<tr ALIGN=LEFT>
+<td WIDTH="9%">Billing Addr</td>
+
+<td><select NAME="nBillAdd_ID"><option VALUE="" ><option SELECTED VALUE="1">PUNE</select></td>
+</tr>
+
+<tr ALIGN=LEFT>
+<td>Shipping Addr</td>
+
+<td><select NAME="nShipAdd_ID"><option VALUE="" ><option SELECTED VALUE="1">PUNE</select></td>
+</tr>
+</table>
+
+<table BORDER=0 COLS=6 WIDTH="92%" 1 >
+<tr ALIGN=LEFT>
+<td WIDTH="15%"></td>
+
+<td></td>
+
+<td></td>
+
+<td></td>
+
+<td></td>
+
+<td></td>
+</tr>
+
+<tr ALIGN=LEFT>
+<td>Custom Num1</td>
+
+<td><input TYPE="text" NAME="nNum1" SIZE="12" MAXLENGTH="40" onBlur="top.check_num(this)"></td>
+
+<td>Custom Text1</td>
+
+<td><input TYPE="text" NAME="vText1" SIZE="12" MAXLENGTH="40"></td>
+
+<td>Custom Date1</td>
+
+<td><input TYPE="text" NAME="dDt1" SIZE="12" MAXLENGTH="7" onBlur="top.check_date(this)"></td>
+</tr>
+
+<tr>
+<td>Custom Num2</td>
+
+<td><input TYPE="text" NAME="nNum2" SIZE="12" MAXLENGTH="40" onBlur="top.check_num(this)"></td>
+
+<td>Custom Text2</td>
+
+<td><input TYPE="text" NAME="vText2" SIZE="12" MAXLENGTH="40"></td>
+
+<td>Custom Date2</td>
+
+<td><input TYPE="text" NAME="dDt2" SIZE="12" MAXLENGTH="12" onBlur="top.check_date(this)"></td>
+</tr>
+
+<tr>
+<td>Custom Num3</td>
+
+<td><input TYPE="text" NAME="nNum3" SIZE="12" MAXLENGTH="40" onBlur="top.check_num(this)"></td>
+
+<td>Custom Text3</td>
+
+<td><input TYPE="text" NAME="vText3" SIZE="12" MAXLENGTH="40"></td>
+
+<td>Custom Date3</td>
+
+<td><input TYPE="text" NAME="dDt3" SIZE="12" MAXLENGTH="12" onBlur="top.check_date(this)"></td>
+</tr>
+
+<tr>
+<td>Custom Num4</td>
+
+<td><input TYPE="text" NAME="nNum4" SIZE="12" MAXLENGTH="40" onBlur="top.check_num(this)"></td>
+
+<td>Custom Text4</td>
+
+<td><input TYPE="text" NAME="vText4" SIZE="12" MAXLENGTH="40"></td>
+
+<td>Custom Charge1</td>
+
+<td><input TYPE="text" NAME="nCharge1" SIZE="12" MAXLENGTH="40" onBlur="top.check_num(this)"></td>
+</tr>
+
+<tr>
+<td>Custom Num5</td>
+
+<td><input TYPE="text" NAME="nNum5" SIZE="12" MAXLENGTH="40" onBlur="top.check_num(this)"></td>
+
+<td>Custom Text5</td>
+
+<td><input TYPE="text" NAME="vText5" SIZE="12" MAXLENGTH="40"></td>
+
+<td>Custom Charge2</td>
+
+<td><input TYPE="text" NAME="nCharge2" SIZE="12" MAXLENGTH="12" onBlur="top.check_date(this)"></td>
+</tr>
+
+<tr>
+<td>Custom Charge3</td>
+
+<td><input TYPE="text" NAME="nCharge3" SIZE="12" MAXLENGTH="12" onBlur="top.check_date(this)"></td>
+
+<td>Custom Charge4</td>
+
+<td><input TYPE="text" NAME="nCharge4" SIZE="12" MAXLENGTH="12" onBlur="top.check_date(this)"></td>
+
+<td></td>
+
+<td></td>
+</tr>
+</table>
+
+<table BORDER=0 COLS=2 WIDTH="92%" 1 >
+<tr ALIGN=LEFT>
+<td WIDTH="11%"></td>
+
+<td></td>
+</tr>
+
+<tr ALIGN=LEFT>
+<td>Custom Rem1</td>
+
+<td><input TYPE="text" NAME="vRemarks1" SIZE="50" MAXLENGTH="500"></td>
+</tr>
+
+<tr ALIGN=LEFT>
+<td>Custom Rem2</td>
+
+<td><input TYPE="text" NAME="vRemarks2" SIZE="50" MAXLENGTH="500"></td>
+</tr>
+
+<tr ALIGN=LEFT>
+<td>Custom Rem3</td>
+
+<td><input TYPE="text" NAME="vRemarks3" SIZE="50" MAXLENGTH="500"></td>
+</tr>
+</table>
+<input TYPE="hidden" NAME="nShpCartID" VALUE=""><input TYPE="hidden" NAME="nTemplateID" VALUE=""><input TYPE="hidden" NAME="vAction" VALUE="">
+<p>
+<hr>
+<p><a NAME="Form :- Order Details /T"></a><b>Form :- Order Details /T</b>
+<br>&nbsp;
+<br>&nbsp;
+<table ALIGN=LEFT BORDER=0 COLS=2 WIDTH="100%" 1 >
+<tr>
+<td WIDTH="15%"><img SRC="NEW1.gif" NAME="NEW" ALT="Create New Order Details" BORDER=0 ></td>
+
+<td>To create new order details , click Create New Order Details button
+. On clicking form <a href="#Form :- Order Details /I">Order Details /I</a>
+is selected where you can create new details .</td>
+</tr>
+
+<tr>
+<td><img SRC="DELETE1.gif" NAME="DELETE" ALT="Delete Order Details" BORDER=0 ></td>
+
+<td>Click the check box in the table to delete the items corresponding
+to it.</td>
+</tr>
+
+<tr>
+<td><img SRC="FRMHLP1.gif" NAME="FRMHLP" ALT="Order Details Form Information" BORDER=0 ></td>
+
+<td>You get the information about Order form on clicking Order Form Information
+button.</td>
+</tr>
+
+<tr>
+<td><img SRC="HELP1.gif" NAME="HELP" ALT="Order Details Form Help" BORDER=0 ></td>
+
+<td>You get help about Order Dteails Form on clicking Order Details Form
+Help button .</td>
+</tr>
+</table>
+
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<table BORDER=0 BGCOLOR="#FFFFCA" >
+<tr>
+<th BGCOLOR="#666666"><font face="arial"><font color="#FFFFFF"><font size=+0>OrderDtls
+ID</font></font></font></th>
+
+<th BGCOLOR="#666666"><font face="arial"><font color="#FFFFFF"><font size=+0>Position
+No</font></font></font></th>
+
+<th BGCOLOR="#666666"><font face="arial"><font color="#FFFFFF"><font size=+0>Item
+Name</font></font></font></th>
+
+<th BGCOLOR="#666666"><font face="arial"><font color="#FFFFFF"><font size=+0>Item
+Pack Name</font></font></font></th>
+
+<th BGCOLOR="#666666"><font face="arial"><font color="#FFFFFF"><font size=+0>Delete</font></font></font></th>
+</tr>
+
+<tr>
+<td ALIGN=LEFT><a href="#Form :- Order Details /U" onMouseOver="return top.show_help( 'Order Details ID : 21 and Pos Nr : 1')" onMouseOut="return top.show_help()" TARGET="_parent">OrderDtls
+# 1</a></td>
+
+<td ALIGN=LEFT>1</td>
+
+<td ALIGN=LEFT>TIN</td>
+
+<td ALIGN=LEFT>CARD</td>
+
+<td ALIGN=LEFT><input TYPE=checkbox NAME=nDelete VALUE=21></td>
+</tr>
+</table>
+
+<p>To update the Order Details click the Serial No.( Order Dtls # 1) corresponding&nbsp;
+to the Description in the row . On clicking Order&nbsp; # 1 , form Order
+Details /U is selected .
+<p>
+<hr>
+<br><a NAME="Form :- Order Details /I"></a><b>Form :- Order Details /I</b>
+<br>&nbsp;
+<br>&nbsp;
+<table ALIGN=LEFT BORDER=0 COLS=2 WIDTH="100%" 1 >
+<tr>
+<td WIDTH="15%"><img SRC="SAVE1.gif" NAME="SAVE" ALT="Save Order Details" BORDER=0 ></td>
+
+<td>Once Order Details has been created , you can save it by clicking Save
+Order Details buton. On clicking form <a href="#Form :- Order Details /T">Order
+Details /T</a> is selected where the newly created one is shown .</td>
+</tr>
+
+<tr>
+<td><img SRC="FRMHLP1.gif" NAME="FRMHLP" ALT="Order Details Form Information" BORDER=0 ></td>
+
+<td>You get the information about Order form on clicking Order Form Information
+button.</td>
+</tr>
+
+<tr>
+<td><img SRC="HELP1.gif" NAME="HELP" ALT="Order Details Form Help" BORDER=0 ></td>
+
+<td>You get help about Order Dteails Form on clicking Order Details Form
+Help button .</td>
+</tr>
+</table>
+
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<table ALIGN=LEFT BORDER=0 COLS=4 WIDTH="80%" 1 >
+<tr ALIGN=LEFT>
+<td WIDTH="20%"><font color="#FF0000"><font face="Tahoma"><font size=-1>Pos
+No</font></font><font face="Arial"><font size=+1> <b>*</b></font></font></font></td>
+
+<td WIDTH="30%"><input TYPE="text" NAME="nPos_No" SIZE="8" MAXLENGTH="20" onBlur="top.check_num(this)"></td>
+
+<td></td>
+
+<td></td>
+</tr>
+
+<tr ALIGN=LEFT>
+<td><font color="#FF0000"><font face="Tahoma"><font size=-1>Item</font></font><b><font face="Arial"><font size=+1>*</font></font></b></font></td>
+
+<td COLSPAN="3"><select NAME="nFk_Item_ID"><option VALUE="" ><option VALUE="1"><font face="Arial"><font color="#000000"><font size=+0>TIN-</font></font></font></select></td>
+
+<td></td>
+
+<td></td>
+</tr>
+
+<tr ALIGN=LEFT>
+<td><font face="Tahoma"><font color="#FF0000"><font size=-1>Item Pack</font></font></font></td>
+
+<td COLSPAN="3"><select NAME="nFk_ItemPack_ID"><option VALUE="" ><option VALUE="1"><font face="Arial"><font color="#000000"><font size=+0>CARD-card
+board pack<option VALUE="6">CARTON-card</font></font></font></select></td>
+
+<td></td>
+
+<td></td>
+</tr>
+
+<tr>
+<td><font color="#FF0000"><font face="Tahoma"><font size=-1>Unit Price</font></font><b><font face="Arial"><font size=+1>*</font></font></b></font></td>
+
+<td><input TYPE="text" NAME="nUnitPrice" SIZE="8" MAXLENGTH="40" onBlur="top.check_num(this)"></td>
+
+<td></td>
+
+<td></td>
+</tr>
+
+<tr ALIGN=LEFT>
+<td><font color="#FF0000"><font face="Tahoma"><font size=-1>Quantity</font></font><b><font face="Arial"><font size=+1>*</font></font></b></font></td>
+
+<td><input TYPE="text" NAME="nQuantity" SIZE="8" MAXLENGTH="40" onBlur="top.check_num(this)"></td>
+
+<td><font color="#FF0000"><font face="Tahoma"><font size=-1>Unit Type</font></font><b><font face="Arial"><font size=+1>*</font></font></b></font></td>
+
+<td><select NAME="cDM_UnitType"><option VALUE="" ><option VALUE="Z"><font face="Arial"><font color="#000000"><font size=+0>no.s<option VALUE="A">Kgs<option VALUE="B">Gms<option VALUE="C">Tons<option VALUE="D">Quintals<option VALUE="E">Litres<option VALUE="F">MiliLitres<option VALUE="G">KiloLitres<option VALUE="H">Meters<option VALUE="I">cms<option VALUE="J">mms<option VALUE="K">KMs</font></font></font></select></td>
+</tr>
+
+<tr ALIGN=LEFT>
+<td><font face="Tahoma"><font color="#FF0000"><font size=-1>Custom Num1</font></font></font></td>
+
+<td><input TYPE="text" NAME="nNum1" SIZE="10" MAXLENGTH="40" onBlur="top.check_num(this)"></td>
+
+<td><font face="Tahoma"><font color="#FF0000"><font size=-1>Custom Num2</font></font></font></td>
+
+<td><input TYPE="text" NAME="nNum2" SIZE="10" MAXLENGTH="40" onBlur="top.check_num(this)"></td>
+</tr>
+
+<tr ALIGN=LEFT>
+<td><font face="Tahoma"><font color="#FF0000"><font size=-1>Custom Num3</font></font></font></td>
+
+<td><input TYPE="text" NAME="nNum3" SIZE="10" MAXLENGTH="40" onBlur="top.check_num(this)"></td>
+
+<td><font face="Tahoma"><font color="#FF0000"><font size=-1>Custom Num4</font></font></font></td>
+
+<td><input TYPE="text" NAME="nNum4" SIZE="10" MAXLENGTH="40" onBlur="top.check_num(this)"></td>
+</tr>
+
+<tr ALIGN=LEFT>
+<td><font face="Tahoma"><font color="#FF0000"><font size=-1>Custom Num5</font></font></font></td>
+
+<td><input TYPE="text" NAME="nNum5" SIZE="10" MAXLENGTH="40" onBlur="top.check_num(this)"></td>
+
+<td><font face="Tahoma"><font color="#FF0000"><font size=-1>Custom Text1</font></font></font></td>
+
+<td><input TYPE="text" NAME="vText1" SIZE="20" MAXLENGTH="40"></td>
+</tr>
+
+<tr ALIGN=LEFT>
+<td><font face="Tahoma"><font color="#FF0000"><font size=-1>Custom Text2</font></font></font></td>
+
+<td><input TYPE="text" NAME="vText2" SIZE="20" MAXLENGTH="40"></td>
+
+<td><font face="Tahoma"><font color="#FF0000"><font size=-1>Custom Text3</font></font></font></td>
+
+<td><input TYPE="text" NAME="vText3" SIZE="20" MAXLENGTH="40"></td>
+</tr>
+
+<tr ALIGN=LEFT>
+<td><font face="Tahoma"><font color="#FF0000"><font size=-1>Custom Text4</font></font></font></td>
+
+<td><input TYPE="text" NAME="vText4" SIZE="20" MAXLENGTH="40"></td>
+
+<td><font face="Tahoma"><font color="#FF0000"><font size=-1>Custom Text5</font></font></font></td>
+
+<td><input TYPE="text" NAME="vText5" SIZE="20" MAXLENGTH="40"></td>
+</tr>
+</table>
+
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<table BORDER=0 COLS=2 WIDTH="80%" 1 >
+<tr>
+<td WIDTH="20%"><font face="Tahoma"><font color="#FF0000"><font size=-1>Custom
+Rem1</font></font></font></td>
+
+<td><input TYPE="text" NAME="vRemarks1" SIZE="57" MAXLENGTH="500"></td>
+</tr>
+
+<tr>
+<td WIDTH="20%"><font face="Tahoma"><font color="#FF0000"><font size=-1>Custom
+Rem2</font></font></font></td>
+
+<td><input TYPE="text" NAME="vRemarks2" SIZE="57" MAXLENGTH="500"></td>
+</tr>
+
+<tr>
+<td WIDTH="20%"><font face="Tahoma"><font color="#FF0000"><font size=-1>Custom
+Rem3</font></font></font></td>
+
+<td><input TYPE="text" NAME="vRemarks3" SIZE="57" MAXLENGTH="500"></td>
+</tr>
+</table>
+
+<p>
+<hr>
+<p><a NAME="Form :- Order Details /U"></a><b>Form :- Order Details /U</b>
+<br>&nbsp;
+<br>&nbsp;
+<table ALIGN=LEFT BORDER=0 COLS=2 WIDTH="100%" 1 >
+<tr>
+<td WIDTH="15%"><img SRC="SAVE1.gif" NAME="SAVE" ALT="Update Order Details" BORDER=0 ></td>
+
+<td>Once Details are updated , they are reflected in form <a href="#Form :- Order Details /I">Order
+Details/T</a> , on clicking Update Order Details buton .</td>
+</tr>
+
+<tr>
+<td><img SRC="FRMHLP1.gif" NAME="FRMHLP" ALT="Order Details Form Information" BORDER=0 ></td>
+
+<td>You get the information about Order form on clicking Order Form Information
+button.</td>
+</tr>
+
+<tr>
+<td><img SRC="HELP1.gif" NAME="HELP" ALT="Order Details Form Help" BORDER=0 ></td>
+
+<td>You get help about Order Dteails Form on clicking Order Details Form
+Help button .</td>
+</tr>
+</table>
+
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<table ALIGN=LEFT BORDER=0 COLS=4 WIDTH="80%" 1 >
+<tr ALIGN=LEFT>
+<td WIDTH="20%"><font color="#FF0000"><font face="Tahoma"><font size=-1>Pos
+No</font></font><font face="Arial"><font size=+1> <b>*</b></font></font></font></td>
+
+<td WIDTH="30%"><input TYPE="text" NAME="nPos_No" SIZE="8" MAXLENGTH="20" VALUE="1" onBlur="top.check_num(this)"></td>
+
+<td></td>
+
+<td></td>
+</tr>
+
+<tr ALIGN=LEFT>
+<td><font color="#FF0000"><font face="Tahoma"><font size=-1>Item</font></font><b><font face="Arial"><font size=+1>*</font></font></b></font></td>
+
+<td COLSPAN="3"><select NAME="nFk_Item_ID"><option VALUE="" ><option SELECTED VALUE="1"><font face="Arial"><font color="#000000"><font size=+0>TIN-</font></font></font></select></td>
+
+<td></td>
+
+<td></td>
+</tr>
+
+<tr ALIGN=LEFT>
+<td><font face="Tahoma"><font color="#FF0000"><font size=-1>Item Pack</font></font></font></td>
+
+<td COLSPAN="3"><select NAME="nFk_ItemPack_ID"><option VALUE="" ><option SELECTED VALUE="1"><font face="Arial"><font color="#000000"><font size=+0>CARD-card
+board pack<option VALUE="6">CARTON-card</font></font></font></select></td>
+
+<td></td>
+
+<td></td>
+</tr>
+
+<tr>
+<td><font color="#FF0000"><font face="Tahoma"><font size=-1>Unit Price</font></font><b><font face="Arial"><font size=+1>*</font></font></b></font></td>
+
+<td><input TYPE="text" NAME="nUnitPrice" SIZE="8" MAXLENGTH="40" VALUE="12" onBlur="top.check_num(this)"></td>
+
+<td></td>
+
+<td></td>
+</tr>
+
+<tr ALIGN=LEFT>
+<td><font color="#FF0000"><font face="Tahoma"><font size=-1>Quantity</font></font><b><font face="Arial"><font size=+1>*</font></font></b></font></td>
+
+<td><input TYPE="text" NAME="nQuantity" SIZE="8" MAXLENGTH="40" VALUE="12" onBlur="top.check_num(this)"></td>
+
+<td><font color="#FF0000"><font face="Tahoma"><font size=-1>Unit Type</font></font><b><font face="Arial"><font size=+1>*</font></font></b></font></td>
+
+<td><select NAME="cDM_UnitType"><option VALUE="" ><option SELECTED VALUE="Z"><font face="Arial"><font color="#000000"><font size=+0>no.s<option VALUE="A">Kgs<option VALUE="B">Gms<option VALUE="C">Tons<option VALUE="D">Quintals<option VALUE="E">Litres<option VALUE="F">MiliLitres<option VALUE="G">KiloLitres<option VALUE="H">Meters<option VALUE="I">cms<option VALUE="J">mms<option VALUE="K">KMs</font></font></font></select></td>
+</tr>
+
+<tr ALIGN=LEFT>
+<td><font face="Tahoma"><font color="#FF0000"><font size=-1>Custom Num1</font></font></font></td>
+
+<td><input TYPE="text" NAME="nNum1" SIZE="10" MAXLENGTH="40" onBlur="top.check_num(this)"></td>
+
+<td><font face="Tahoma"><font color="#FF0000"><font size=-1>Custom Num2</font></font></font></td>
+
+<td><input TYPE="text" NAME="nNum2" SIZE="10" MAXLENGTH="40" onBlur="top.check_num(this)"></td>
+</tr>
+
+<tr ALIGN=LEFT>
+<td><font face="Tahoma"><font color="#FF0000"><font size=-1>Custom Num3</font></font></font></td>
+
+<td><input TYPE="text" NAME="nNum3" SIZE="10" MAXLENGTH="40" onBlur="top.check_num(this)"></td>
+
+<td><font face="Tahoma"><font color="#FF0000"><font size=-1>Custom Num4</font></font></font></td>
+
+<td><input TYPE="text" NAME="nNum4" SIZE="10" MAXLENGTH="40" onBlur="top.check_num(this)"></td>
+</tr>
+
+<tr ALIGN=LEFT>
+<td><font face="Tahoma"><font color="#FF0000"><font size=-1>Custom Num5</font></font></font></td>
+
+<td><input TYPE="text" NAME="nNum5" SIZE="10" MAXLENGTH="40" onBlur="top.check_num(this)"></td>
+
+<td><font face="Tahoma"><font color="#FF0000"><font size=-1>Custom Text1</font></font></font></td>
+
+<td><input TYPE="text" NAME="vText1" SIZE="20" MAXLENGTH="40"></td>
+</tr>
+
+<tr ALIGN=LEFT>
+<td><font face="Tahoma"><font color="#FF0000"><font size=-1>Custom Text2</font></font></font></td>
+
+<td><input TYPE="text" NAME="vText2" SIZE="20" MAXLENGTH="40"></td>
+
+<td><font face="Tahoma"><font color="#FF0000"><font size=-1>Custom Text3</font></font></font></td>
+
+<td><input TYPE="text" NAME="vText3" SIZE="20" MAXLENGTH="40"></td>
+</tr>
+
+<tr ALIGN=LEFT>
+<td><font face="Tahoma"><font color="#FF0000"><font size=-1>Custom Text4</font></font></font></td>
+
+<td><input TYPE="text" NAME="vText4" SIZE="20" MAXLENGTH="40"></td>
+
+<td><font face="Tahoma"><font color="#FF0000"><font size=-1>Custom Text5</font></font></font></td>
+
+<td><input TYPE="text" NAME="vText5" SIZE="20" MAXLENGTH="40"></td>
+</tr>
+</table>
+
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<p>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<table BORDER=0 COLS=2 WIDTH="80%" 1 >
+<tr>
+<td WIDTH="20%"><font face="Tahoma"><font color="#FF0000"><font size=-1>Custom
+Rem1</font></font></font></td>
+
+<td><input TYPE="text" NAME="vRemarks1" SIZE="57" MAXLENGTH="500"></td>
+</tr>
+
+<tr>
+<td WIDTH="20%"><font face="Tahoma"><font color="#FF0000"><font size=-1>Custom
+Rem2</font></font></font></td>
+
+<td><input TYPE="text" NAME="vRemarks2" SIZE="57" MAXLENGTH="500"></td>
+</tr>
+
+<tr>
+<td WIDTH="20%"><font face="Tahoma"><font color="#FF0000"><font size=-1>Custom
+Rem3</font></font></font></td>
+
+<td><input TYPE="text" NAME="vRemarks3" SIZE="57" MAXLENGTH="500"></td>
+</tr>
+</table>
+
+<p>
+<hr></form>
+</body>
+</html>

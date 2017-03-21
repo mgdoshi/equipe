@@ -1,0 +1,419 @@
+<HTML>
+<HEAD>
+<TITLE>The Order Entry & Tracking System</TITLE>
+<SCRIPT LANGUAGE="JavaScript1.3">
+
+<!-- Hide From Old Browsers
+
+  var vImgRef = "/ordimg/BP_Button/"
+
+//  Standard Form Buttons 
+  var QRYTAB = new Array()
+  QRYTAB[0] = new Image();
+  QRYTAB[0].src = vImgRef+"QRYTAB1.gif"
+  QRYTAB[1] = new Image();
+  QRYTAB[1].src = vImgRef+"QRYTAB2.gif"
+
+  var QRYLST = new Array()
+  QRYLST[0] = new Image();
+  QRYLST[0].src = vImgRef+"QRYLST1.gif"
+  QRYLST[1] = new Image();
+  QRYLST[1].src = vImgRef+"QRYLST2.gif"
+
+  var NEW = new Array()
+  NEW[0] = new Image();
+  NEW[0].src = vImgRef+"NEW1.gif"
+  NEW[1] = new Image();
+  NEW[1].src = vImgRef+"NEW2.gif"
+
+  var NNEW = new Array()
+  NNEW[0] = new Image();
+  NNEW[0].src = vImgRef+"NNEW1.gif"
+  NNEW[1] = new Image();
+  NNEW[1].src = vImgRef+"NNEW2.gif"
+
+  var DELETE = new Array()
+  DELETE[0] = new Image();
+  DELETE[0].src = vImgRef+"DELETE1.gif"
+  DELETE[1] = new Image();
+  DELETE[1].src = vImgRef+"DELETE2.gif"
+
+  var NDELETE = new Array()
+  NDELETE[0] = new Image();
+  NDELETE[0].src = vImgRef+"NDELETE1.gif"
+  NDELETE[1] = new Image();
+  NDELETE[1].src = vImgRef+"NDELETE2.gif"
+
+  var SAVE = new Array()
+  SAVE[0] = new Image();
+  SAVE[0].src = vImgRef+"SAVE1.gif"
+  SAVE[1] = new Image();
+  SAVE[1].src = vImgRef+"SAVE2.gif"
+
+  var NSAVE = new Array()
+  NSAVE[0] = new Image();
+  NSAVE[0].src = vImgRef+"NSAVE1.gif"
+  NSAVE[1] = new Image();
+  NSAVE[1].src = vImgRef+"NSAVE2.gif"
+
+  var PREF = new Array()
+  PREF[0] = new Image();
+  PREF[0].src = vImgRef+"PREF1.gif"
+  PREF[1] = new Image();
+  PREF[1].src = vImgRef+"PREF2.gif"
+
+  var LIST = new Array()
+  LIST[0] = new Image();
+  LIST[0].src = vImgRef+"LIST1.gif"
+  LIST[1] = new Image();
+  LIST[1].src = vImgRef+"LIST2.gif"
+
+  var HELP = new Array()
+  HELP[0] = new Image();
+  HELP[0].src = vImgRef+"HELP1.gif"
+  HELP[1] = new Image();
+  HELP[1].src = vImgRef+"HELP2.gif"
+
+  var FRMHLP = new Array()
+  FRMHLP[0] = new Image();
+  FRMHLP[0].src = vImgRef+"FRMHLP1.gif"
+  FRMHLP[1] = new Image();
+  FRMHLP[1].src = vImgRef+"FRMHLP2.gif"
+
+//  Navigation Buttons 
+  var FIRST = new Array()
+  FIRST[0] = new Image();
+  FIRST[0].src = vImgRef+"FIRST1.gif"
+  FIRST[1] = new Image();
+  FIRST[1].src = vImgRef+"FIRST2.gif"
+
+  var PREV = new Array()
+  PREV[0] = new Image();
+  PREV[0].src = vImgRef+"PREV1.gif"
+  PREV[1] = new Image();
+  PREV[1].src = vImgRef+"PREV2.gif"
+
+  var NEXT = new Array()
+  NEXT[0] = new Image();
+  NEXT[0].src = vImgRef+"NEXT1.gif"
+  NEXT[1] = new Image();
+  NEXT[1].src = vImgRef+"NEXT2.gif"
+
+  var LAST = new Array()
+  LAST[0] = new Image();
+  LAST[0].src = vImgRef+"LAST1.gif"
+  LAST[1] = new Image();
+  LAST[1].src = vImgRef+"LAST2.gif"
+
+//  User Form Buttons
+  var USRGRP = new Array()
+  USRGRP[0] = new Image();
+  USRGRP[0].src = vImgRef+"USRGRP1.gif"
+  USRGRP[1] = new Image();
+  USRGRP[1].src = vImgRef+"USRGRP2.gif"
+
+//  Group Form Buttons
+  var GRPUSR = new Array()
+  GRPUSR[0] = new Image();
+  GRPUSR[0].src = vImgRef+"GRPUSR1.gif"
+  GRPUSR[1] = new Image();
+  GRPUSR[1].src = vImgRef+"GRPUSR2.gif"
+
+//  Client Form Buttons
+  var ASSITM = new Array()
+  ASSITM[0] = new Image();
+  ASSITM[0].src = vImgRef+"ASSITM1.gif"
+  ASSITM[1] = new Image();
+  ASSITM[1].src = vImgRef+"ASSITM2.gif"
+
+//  Employee Form Buttons
+  var EMPFUN = new Array()
+  EMPFUN[0] = new Image();
+  EMPFUN[0].src = vImgRef+"EMPFUN1.gif"
+  EMPFUN[1] = new Image();
+  EMPFUN[1].src = vImgRef+"EMPFUN2.gif"
+
+//  Address Form Buttons
+  var MEADDR = new Array()
+  MEADDR[0] = new Image();
+  MEADDR[0].src = vImgRef+"MEADDR1.gif"
+  MEADDR[1] = new Image();
+  MEADDR[1].src = vImgRef+"MEADDR2.gif"
+
+  var NEADDR = new Array()
+  NEADDR[0] = new Image();
+  NEADDR[0].src = vImgRef+"NEADDR1.gif"
+  NEADDR[1] = new Image();
+  NEADDR[1].src = vImgRef+"NEADDR2.gif"
+
+  var MOADDR = new Array()
+  MOADDR[0] = new Image();
+  MOADDR[0].src = vImgRef+"MOADDR1.gif"
+  MOADDR[1] = new Image();
+  MOADDR[1].src = vImgRef+"MOADDR2.gif"
+
+  var NOADDR = new Array()
+  NOADDR[0] = new Image();
+  NOADDR[0].src = vImgRef+"NOADDR1.gif"
+  NOADDR[1] = new Image();
+  NOADDR[1].src = vImgRef+"NOADDR2.gif"
+
+//  Item Form Buttons
+  var ASSCLNT = new Array()
+  ASSCLNT[0] = new Image();
+  ASSCLNT[0].src = vImgRef+"ASSCLNT1.gif"
+  ASSCLNT[1] = new Image();
+  ASSCLNT[1].src = vImgRef+"ASSCLNT2.gif"
+
+  var ITMRATE = new Array()
+  ITMRATE[0] = new Image();
+  ITMRATE[0].src = vImgRef+"ITMRATE1.gif"
+  ITMRATE[1] = new Image();
+  ITMRATE[1].src = vImgRef+"ITMRATE1.gif"
+
+  var NITMRT = new Array()
+  NITMRT[0] = new Image();
+  NITMRT[0].src = vImgRef+"NITMRT1.gif"
+  NITMRT[1] = new Image();
+  NITMRT[1].src = vImgRef+"NITMRT2.gif"
+
+  var MITMRT = new Array()
+  MITMRT[0] = new Image();
+  MITMRT[0].src = vImgRef+"MITMRT1.gif"
+  MITMRT[1] = new Image();
+  MITMRT[1].src = vImgRef+"MITMRT2.gif"
+
+// Object Security
+
+  var OBJSEC = new Array()
+  OBJSEC[0] = new Image();
+  OBJSEC[0].src = vImgRef+"OBJSEC1.gif"
+  OBJSEC[1] = new Image();
+  OBJSEC[1].src = vImgRef+"OBJSEC2.gif"
+
+// Record Security
+
+  var RECSEC = new Array()
+  RECSEC[0] = new Image();
+  RECSEC[0].src = vImgRef+"RECSEC1.gif"
+  RECSEC[1] = new Image();
+  RECSEC[1].src = vImgRef+"RECSEC2.gif"
+  
+//  Delivery Form Buttons
+  var NEWDEL = new Array()
+  NEWDEL[0] = new Image();
+  NEWDEL[0].src = vImgRef+"NEWDEL1.gif"
+  NEWDEL[1] = new Image();
+  NEWDEL[1].src = vImgRef+"NEWDEL2.gif"
+
+// Shopping Cart Form Buttons
+
+  var SHPCART = new Array()
+  SHPCART[0] = new Image();
+  SHPCART[0].src = vImgRef+"SHPCART1.gif"
+  SHPCART[1] = new Image();
+  SHPCART[1].src = vImgRef+"SHPCART2.gif"
+
+// Template Form Buttons
+
+  var TEMPORD = new Array()
+  TEMPORD[0] = new Image();
+  TEMPORD[0].src = vImgRef+"TEMPORD1.gif"
+  TEMPORD[1] = new Image();
+  TEMPORD[1].src = vImgRef+"TEMPORD2.gif"
+
+  var TEMTEM = new Array()
+  TEMTEM[0] = new Image();
+  TEMTEM[0].src = vImgRef+"TEMTEM1.gif"
+  TEMTEM[1] = new Image();
+  TEMTEM[1].src = vImgRef+"TEMTEM2.gif"
+
+  var SELTEMP = new Array()
+  SELTEMP[0] = new Image();
+  SELTEMP[0].src = vImgRef+"SELTEMP1.gif"
+  SELTEMP[1] = new Image();
+  SELTEMP[1].src = vImgRef+"SELTEMP2.gif"
+
+//  Order Form Buttons
+  var ORDOPN = new Array()
+  ORDOPN[0] = new Image();
+  ORDOPN[0].src = vImgRef+"ORDOPN1.gif"
+  ORDOPN[1] = new Image();
+  ORDOPN[1].src = vImgRef+"ORDOPN2.gif"
+
+  var ORDTEMP = new Array()
+  ORDTEMP[0] = new Image();
+  ORDTEMP[0].src = vImgRef+"ORDTEMP1.gif"
+  ORDTEMP[1] = new Image();
+  ORDTEMP[1].src = vImgRef+"ORDTEMP2.gif"
+
+  var SELITM = new Array()
+  SELITM[0] = new Image();
+  SELITM[0].src = vImgRef+"SELITM1.gif"
+  SELITM[1] = new Image();
+  SELITM[1].src = vImgRef+"SELITM2.gif"
+
+  var SELORD = new Array()
+  SELORD[0] = new Image();
+  SELORD[0].src = vImgRef+"SELORD1.gif"
+  SELORD[1] = new Image();
+  SELORD[1].src = vImgRef+"SELORD2.gif"
+
+  function check_date( pvDate ) 
+  {
+    var vDate;
+    var vMonth;
+    var vYear;
+    var nDate;
+    var nMonth;
+    var nYear;
+    var noDaysInFeb
+    if ( !top.IsNull( pvDate.value ) ) {
+       vDate = pvDate.value.substring(0, pvDate.value.indexOf('.', 1));
+       vMonth = pvDate.value.substring(pvDate.value.indexOf('.', 2)+1, pvDate.value.indexOf('.', 3)); 
+       vYear = pvDate.value.substring(pvDate.value.indexOf('.', 3)+1); 
+       nDate  = vDate; nMonth = vMonth; nYear  = vYear;
+       if ( pvDate.value.length > 10 || pvDate.value.length < 8 ) { 
+          pvDate.select(); pvDate.focus(); top.show_status( 'Please, Enter the date in "DD.MM.YYYY" Format Only' );
+       }
+       else if( nMonth>12 || nMonth<1 ) {
+         pvDate.select(); pvDate.focus(); top.show_status( 'Please, Enter the valid Month ( Date Format : "DD.MM.YYY" )' );
+       }
+       else if( vYear.length!=4) { 
+         pvDate.select(); pvDate.focus(); top.show_status( 'Please, Enter the valid Year ( Date Format : "DD.MM.YYY" )' );
+       } 
+       else {
+         if ( (nYear%4)==0 && ( (nYear%400)==0 || (nYear%100)!=0 ) )
+           noDaysInFeb = 29
+         else
+           noDaysInFeb = 28   
+         if ( (nMonth==4 || nMonth==6 || nMonth==9 || nMonth==11) &&  nDate>30 ) {
+           pvDate.select(); pvDate.focus(); top.show_status( 'Please, Enter the valid Date ( Date Format : "DD.MM.YYY" )' ); 
+         }
+         else if ( (nMonth==1 || nMonth==3 || nMonth==5 || nMonth==7 || nMonth==8 || nMonth==10 || nMonth==12) &&  nDate>31 ) {  
+            pvDate.select(); pvDate.focus(); top.show_status( 'Please, Enter the valid Date ( Date Format : "DD.MM.YYY" )' ); 
+         } 
+         else if ( nMonth==2 && nDate>noDaysInFeb) {
+            pvDate.select(); pvDate.focus(); top.show_status( 'Please, Enter the valid Date ( Date Format : "DD.MM.YYY" )' ); 
+         } 
+       }
+       setTimeout('top.show_status("")', 5000);
+     }
+   }
+
+  function check_num( pvNum ) 
+  {
+    var cCharCode;
+    if ( !top.IsNull( pvNum.value ) ) {
+      for( var i=0; i<pvNum.value.length; i++ ) {
+        cCharCode = pvNum.value.charCodeAt(i)
+        if( cCharCode<48 || cCharCode>57 ) {
+          pvNum.select(); pvNum.focus(); top.show_status( 'Please Enter the valid Number, "'+pvNum.value.charAt(i)+'" character is not allowed.' ); setTimeout('top.show_status("")', 5000); return
+        } 
+      } 
+    }
+  }
+
+function setStatusText(index,text)
+{
+  top.bot_frame.document.MenuApplet.setText(index,text) 
+}
+
+function enableMenu(args,flag)
+{
+  top.bot_frame.document.MenuApplet.enableMenu(args,flag)
+}
+
+function enable_menu( pvMenu, nFlag )
+{
+  top.bot_frame.document.MenuApplet.enableMenu( pvMenu, nFlag )
+}
+
+function isRowBlank( pvText, pnCount )
+{
+   var nFrom = -1;
+   for ( var i=0; i<pvText.length; i++ )  {
+     nFrom = pvText.indexOf( ',', nFrom+1 )  
+     if ( nFrom > -1 )
+       pnCount--;
+     else 
+       return ( pnCount == 0 ? true : false );
+   }
+}
+
+function show_form( pvText )
+{
+  window.status = ''; 
+  window.defaultstatus = '';
+
+  top.bot_frame.document.MenuApplet.setText( 2, '  '+pvText )
+  top.bot_frame.document.MenuApplet.setText( 1, '     Order Entry & Tracking System' )
+
+  return true;
+}
+
+function show_status( pvText )
+{
+  window.status = ''; 
+  window.defaultstatus = '';
+  
+  if( top.IsNull( pvText ) )
+    pvText = 'Order Entry & Tracking System'; 
+
+  top.bot_frame.document.MenuApplet.setText( 1, '     '+pvText )
+
+  return true;
+}
+
+function IsNull( pvField )
+{                                                           
+  var nCount = 0
+
+  if ( pvField == "" )
+    return true
+  else  {
+    for( var i=0; i<pvField.length; i++ )
+      if ( pvField.charAt(i) == " " )
+        nCount++
+    if ( nCount == pvField.length )
+      return true
+    else
+      return false
+  } 
+}
+
+function check_fields( pavField )
+{									
+   var vErrMsg = ""
+
+   for ( var i=1; i<pavField.length; i=i+2 ) {
+     if( IsNull( pavField[i] ) )
+       vErrMsg = vErrMsg + "     " + pavField[i-1] + ",\n";
+     else
+       continue;
+   }
+   return vErrMsg
+}
+
+function show_help( pvData ) 
+{
+   if( pvData  )
+     top.show_status( 'Click to Update "' + pvData + '". ') ;
+   else  
+     top.show_status( 'Order Entry & Tracking System' );   
+    return true
+}
+
+// End Hidding -->
+</SCRIPT>
+
+</HEAD>
+<FRAMESET SCROLLING="no" BORDER=0 FRAMEBORDER=0 FRAMESPACING=0 MARGINWIDTH=0 MARGINHEIGHT=0 ROWS="30,*,30" onLoad='setTimeout( "top.show_status(\"\")", 5000 )'>
+  <FRAME SRC="/ordhtm/top.html"    NAME="top_frame" FRAMESPACING=0 MARGINWIDTH=0 MARGINHEIGHT=0 SCROLLING="no">
+  <FRAME SRC="/ordhtm/home.html"   NAME="mid_frame" FRAMESPACING=0 MARGINWIDTH=0 MARGINHEIGHT=0>
+  <FRAME SRC="/ordhtm/status.html" NAME="bot_frame" FRAMESPACING=0 MARGINWIDTH=0 MARGINHEIGHT=0 SCROLLING="no">
+  <NOFRAMES>
+    <BODY NAME="MEDIUM"></BODY>
+  </NOFRAMES>
+</FRAMESET>
+</HTML>
